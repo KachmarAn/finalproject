@@ -59,6 +59,10 @@ h3 {
 h4 {
   font-size: 16px;
 }
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
 
 .btn-lang {
   width: 33px;
@@ -97,6 +101,12 @@ h4 {
   .splash {
     background-color: $grey-separator;
   }
+}
+.icon {
+  width: 92px;
+  height: 92px;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 @media screen and (min-width: 375px) {
