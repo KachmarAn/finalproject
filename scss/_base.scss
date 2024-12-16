@@ -1,22 +1,21 @@
-
-
-
-
+body {
+  font-family: "Montserrat", sans-serif;
+}
 
 //main
 $main: rgba(50, 50, 100, 1);
-$main-alt:rgba(70, 70, 110, 1);
+$main-alt: rgba(70, 70, 110, 1);
 $main-soft: rgba(104, 104, 135, 1);
 //accent active
 $accent: rgba(240, 20, 90, 1);
 $regular: rgba(36, 163, 255, 1);
 $blu-hover: rgba(0, 133, 255, 1);
-$blu-active: rgba(0, 108, 207, 1); 
+$blu-active: rgba(0, 108, 207, 1);
 //grey
-$grey-bg:rgba(245, 245, 250, 1);
-$grey-alt:rgba(237, 237, 247, 1);
-$grey-text:rgba(179, 179, 186, 1);
-$grey-separator:rgba(230, 230, 240, 1);
+$grey-bg: rgba(245, 245, 250, 1);
+$grey-alt: rgba(237, 237, 247, 1);
+$grey-text: rgba(179, 179, 186, 1);
+$grey-separator: rgba(230, 230, 240, 1);
 
 //gradient 
 $gradient: linear-gradient(rgba(50, 50, 100, 1) rgba(50, 50, 100, 1)rgba(165, 75, 95, 1));
@@ -36,25 +35,31 @@ $gradient-red-text: linear-gradient(rgba(240, 20, 90, 1) rgba(239, 128, 128, 1))
   text-decoration: none
 }
 
-h1, h2, h3, h4, b, strong {
+h1,
+h2,
+h3,
+h4,
+b,
+strong {
   font-weight: 700;
 }
-h1{
+
+h1 {
   font-size: 38px;
-  font-weight: 46px;
 }
+
 h2 {
   font-size: 30px;
-  font-weight: 36px;
 }
+
 h3 {
   font-size: 14px;
-  font-weight: 17px;
 }
+
 h4 {
   font-size: 16px;
-  font-weight: 19px;
 }
+
 .btn-lang {
   width: 33px;
   height: 25px;
@@ -63,25 +68,68 @@ h4 {
   color: rgba(255, 255, 255, 1);
   font-weight: 700;
   font-size: 12px;
-  }
-  .btn-lang:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  .btn-lang:active {
-    background-color:$accent;
-  }
+  cursor: pointer;
+}
+
+.btn-lang:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-lang:active {
+  background-color: $accent;
+}
+
 .btn-menu {
-width: 335px;
-height: 43px;
-border-radius: 12px;
-background-color: $grey-bg;
-color: $regular;
-font-size: 24px;
-font-weight: 700;
-} 
+  width: 335px;
+  height: 43px;
+  border-radius: 12px;
+  background-color: $grey-bg;
+  color: $regular;
+  font-size: 24px;
+  font-weight: 700;
+}
+
 .btn-menu:hover {
   color: $accent;
 }
+
 .btn-menu:active {
-  background-color: $grey-separator;
- }
+  .splash {
+    background-color: $grey-separator;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .splash {
+    max-width: calc (315px + 15px + 15px);
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .splash {
+    max-width: calc (648px + 30px + 30px);
+    padding: 0 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .splash {
+    max-width: calc (904px + 60px + 60px);
+    padding: 0 60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .splash {
+    max-width: calc (1320px + 60px + 60px);
+    padding: 0 60px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .splash {
+    max-width: calc (1600px + 160px + 160px);
+    padding: 0 160px;
+  }
+}

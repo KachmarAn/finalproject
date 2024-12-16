@@ -6,3 +6,69 @@
     height: 100vh;
     background-color: vars.$main;
 }
+
+content {
+    display: flex;
+    align-items: center;
+}
+
+.contacts .top {
+    display: flex;
+    align-items: center;
+    gap: 0;
+
+    ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        position: relative;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    li:not(:last-child)::after {
+        content: "•";
+        color: rgba(255, 255, 255, 1);
+        font-size: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    li:first-child::before {
+        content: "•";
+        color: rgba(255, 255, 255, 1);
+        font-size: 1rem;
+        margin-right: 0.5rem;
+    }
+    .svg:hover {
+        fill: vars.$accent;
+      }
+ }
+
+ .pinned {
+    display: flex;
+    justify-content: space-between;
+    ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        gap: 20px;
+        color: rgba(255, 255, 255, 1);
+    }
+}
+.checkbox {
+    display: none;
+}
+.burger-icon  {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+  content {
+    margin: 0 15px;
+  }
+  }
+  

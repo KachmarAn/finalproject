@@ -1,3 +1,8 @@
+@charset "UTF-8";
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,28 +14,29 @@
   text-decoration: none;
 }
 
-h1, h2, h3, h4, b, strong {
+h1,
+h2,
+h3,
+h4,
+b,
+strong {
   font-weight: 700;
 }
 
 h1 {
   font-size: 38px;
-  font-weight: 46px;
 }
 
 h2 {
   font-size: 30px;
-  font-weight: 36px;
 }
 
 h3 {
   font-size: 14px;
-  font-weight: 17px;
 }
 
 h4 {
   font-size: 16px;
-  font-weight: 19px;
 }
 
 .btn-lang {
@@ -41,6 +47,7 @@ h4 {
   color: rgb(255, 255, 255);
   font-weight: 700;
   font-size: 12px;
+  cursor: pointer;
 }
 
 .btn-lang:hover {
@@ -65,13 +72,107 @@ h4 {
   color: rgb(240, 20, 90);
 }
 
-.btn-menu:active {
+.btn-menu:active .splash {
   background-color: rgb(230, 230, 240);
 }
 
+@media screen and (min-width: 375px) {
+  .splash {
+    max-width: calc 345px;
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .splash {
+    max-width: calc 708px;
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .splash {
+    max-width: calc 1024px;
+    padding: 0 60px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .splash {
+    max-width: calc 1440px;
+    padding: 0 60px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .splash {
+    max-width: calc 1920px;
+    padding: 0 160px;
+  }
+}
 .splash {
   height: 100vh;
   background-color: rgb(50, 50, 100);
+}
+
+content {
+  display: flex;
+  align-items: center;
+}
+
+.contacts .top {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+.contacts .top ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.contacts .top li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: rgb(255, 255, 255);
+}
+.contacts .top li:not(:last-child)::after {
+  content: "•";
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.contacts .top li:first-child::before {
+  content: "•";
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+.contacts .top .svg:hover {
+  fill: rgb(240, 20, 90);
+}
+
+.pinned {
+  display: flex;
+  justify-content: space-between;
+}
+.pinned ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.checkbox {
+  display: none;
+}
+
+.burger-icon {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  content {
+    margin: 0 15px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
