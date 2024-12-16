@@ -1,0 +1,17 @@
+//подключенные модули
+@use 'variables'  as vars;
+@use 'mixins'  as mix;
+@use 'base';
+@use 'components';
+@use 'font';
+
+
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 22px;
+}

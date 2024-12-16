@@ -1,0 +1,36 @@
+// Цвета
+$main-color: #2B2346; // Main
+$main-alt: #363053; // Alt
+$main-soft: #5A5475; // Soft
+
+$accent-color: #E80057; // Accent
+
+$active-regular: #40A9FF; // Regular
+$active-hover: #0093FF; // Hover
+$active-active: #0068C9; // Active
+
+$grey-bg: #F6F6FB; // Bg
+$grey-bg-alt: #EDEDF1; // Bg Alt
+$grey-text: #BDBDC8; // Text
+$grey-separator: #E8E8F2; // Separator
+
+// Градиенты
+$gradient-soft: linear-gradient(90deg, #2B2346 0%, #E80057 100%);
+$gradient-red: linear-gradient(90deg, #E80057 0%, #FF447F 100%);
+$gradient-supersoft: linear-gradient(90deg, #2B2346 0%, #5A5475 100%);
+$gradient-red-text: linear-gradient(90deg, #E80057 0%, #FF447F 100%);
+
+// Шрифты
+$font-hero: 'Montserrat Bold', sans-serif;
+$font-regular: 'Montserrat Regular', sans-serif;
+
+// Размеры шрифтов
+$font-hero-size: 48px;
+$font-h2-size: 32px;
+$font-h3-size: 28px;
+$font-h3-caps-size: 24px;
+$font-h4-size: 18px;
+$font-paragraph-size: 16px;
+
+// Отступы
+$margin-bottom: 20px;

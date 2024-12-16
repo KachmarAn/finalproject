@@ -1,0 +1,42 @@
+@use 'font';
+
+body {
+    font-family: font.$font-regular;
+    font-size: font.$font-paragraph-size;
+    color: $grey-text;
+    margin: 0;
+    padding: 0;
+    background: $grey-bg;
+  }
+  
+  h1, h2, h3, h4 {
+    margin-bottom: $margin-bottom;
+    line-height: 1.2;
+  }
+  
+  h1 {
+    @include font-style($font-hero-size, bold, $main-color);
+  }
+  
+  h2 {
+    @include font-style($font-h2-size, bold, $main-alt);
+  }
+  
+  h3 {
+    @include font-style($font-h3-size, bold, $main-soft);
+  }
+  
+  h4 {
+    @include font-style($font-h4-size, normal, $grey-text);
+  }
+  
+  a {
+    color: $active-hover;
+    text-decoration: none;
+  
+    &:hover {
+      color: $active-active;
+      text-decoration: underline;
+    }
+  }
+  

@@ -1,0 +1,39 @@
+// Hero заголовок
+.hero-title {
+    font-family: $font-hero;
+    font-size: $font-hero-size;
+    color: $accent-color;
+    text-transform: uppercase;
+    margin-bottom: $margin-bottom;
+  }
+  
+  // Кнопка
+  .button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: $font-regular;
+    font-size: $font-paragraph-size;
+    color: white;
+  
+    &--primary {
+      background-color: $active-regular;
+  
+      &:hover {
+        background-color: $active-hover;
+      }
+  
+      &:active {
+        background-color: $active-active;
+      }
+    }
+  }
+  
+  // Градиентный блок
+  .gradient-box {
+    @include gradient-bg($gradient-soft);
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+  }
+  
