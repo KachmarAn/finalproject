@@ -92,18 +92,17 @@ input {
   display: none;
 }
 
+.content {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  width: 100%;
+}
+
 @media screen and (min-width: 375px) {
   .content {
     max-width: calc 345px;
     padding: 0 15px;
   }
   .logo {
-    display: none;
-  }
-  .top a {
-    display: none;
-  }
-  .pinned li {
     display: none;
   }
   .top {
@@ -155,13 +154,23 @@ input {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh; /* Задайте высоту блока */
+  height: 100vh;
+  /* Задайте высоту блока */
 }
 
 @media screen and (min-width: 375px) {
+  .top a {
+    display: none;
+  }
+  .contacts .top ul li {
+    display: none;
+  }
+  .pinned li {
+    display: none;
+  }
   .frame3 li {
+    display: inline-block;
     color: rgb(179, 179, 186);
-    display: grid;
     cursor: pointer;
   }
   .frame3 li:hover {
@@ -252,8 +261,12 @@ input {
   .team h1 {
     font-size: 30px;
   }
+  .team img {
+    border-radius: 12px 12px 0 0;
+  }
   .team .part {
     width: 315px;
+    border-radius: 0 0 12px 12px;
   }
   .part2 h1 {
     font-size: 30px;
@@ -268,33 +281,30 @@ input {
     align-items: center;
     justify-content: center;
   }
-  .color1,
-  .color2,
-  .color3,
-  .color4,
-  .color5,
-  .color6,
-  .color7,
-  .color8,
-  .color9,
-  .color10,
-  .color11,
-  .color12 {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  div .card .color12 {
+    display: none;
+  }
+  div .card .color11 {
+    display: none;
+  }
+  div .card .color10 {
+    display: none;
+  }
+  div .card .color9 {
+    display: none;
+  }
+  div .card .color8 {
+    display: none;
+  }
+  div .card .color7 {
+    display: none;
   }
 }
-.content {
-  background-color: rgb(50, 50, 100);
-  width: 100%;
-}
-
 .splash {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  /* Цвет линий при наведении */
 }
 .splash h2 {
   text-align: center;
@@ -306,12 +316,15 @@ input {
 }
 .splash .scroll {
   text-align: center;
-  color: rgb(255, 255, 255);
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+}
+.splash .scroll:hover {
+  stroke: red;
+  /* Меняем цвет линий на красный */
 }
 
 content {
@@ -418,7 +431,7 @@ content {
   margin-top: 30px;
 }
 .team .part div {
-  font-size: 14spx;
+  font-size: 14px;
   color: rgb(179, 179, 186);
   font-weight: 400;
   line-height: 22px;
@@ -449,7 +462,7 @@ content {
   margin-top: 30px;
 }
 .part2 div {
-  font-size: 14spx;
+  font-size: 14px;
   color: rgb(179, 179, 186);
   font-weight: 400;
   line-height: 22px;
@@ -525,46 +538,75 @@ content {
 }
 
 .card {
-  height: 120px;
+  height: auto;
   width: auto;
   display: flex;
   justify-content: center;
 }
+.card .color1,
+.card .color2,
+.card .color3,
+.card .color4,
+.card .color5,
+.card .color6,
+.card .color7,
+.card .color8,
+.card .color9,
+.card .color10,
+.card .color11,
+.card .color12 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .card .color1 {
   background-color: rgb(28, 66, 128);
+  height: 120px;
 }
 .card .color2 {
   background-color: rgb(20, 54, 70);
+  height: 120px;
 }
 .card .color3 {
   background-color: rgb(253, 147, 57);
+  height: 120px;
 }
 .card .color4 {
   background-color: rgb(158, 77, 195);
+  height: 120px;
 }
 .card .color5 {
   background-color: rgb(253, 147, 57);
+  height: 120px;
 }
 .card .color6 {
   background-color: rgb(226, 226, 228);
+  height: 120px;
 }
 .card .color7 {
   background-color: rgb(199, 28, 54);
+  height: 120px;
 }
 .card .color8 {
   background-color: rgb(220, 243, 249);
+  height: 120px;
 }
 .card .color9 {
   background-color: rgb(234, 234, 234);
+  height: 120px;
 }
 .card .color10 {
   background-color: rgb(40, 34, 64);
+  height: 120px;
 }
 .card .color11 {
   background-color: rgb(29, 69, 104);
+  height: 120px;
 }
 .card .color12 {
   background-color: rgb(0, 0, 0);
+  height: 120px;
 }
 
 @media screen and (min-width: 768px) {

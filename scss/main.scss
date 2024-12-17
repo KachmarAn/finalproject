@@ -3,11 +3,6 @@
 @use 'base' as vars;
 @use 'mobile';
 
-.content {
-    background-color: vars.$main;
-    width: 100%;
-}
-
 .splash {
     display: flex;
     flex-direction: column;
@@ -20,19 +15,29 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
     }
 
     .scroll {
         text-align: center;
-        color: rgba(255, 255, 255, 1);
+        // color: rgba(255, 255, 255, 1);
         position: absolute;
         bottom: 0;
         left: 50%;
         transform: translate(-50%, -50%);
         cursor: pointer;
     }
+
+
+    /* Цвет линий при наведении */
+   .scroll:hover {
+        stroke: red;
+        /* Меняем цвет линий на красный */
+    }
+
 }
+
+
+
 
 content {
     display: flex;
@@ -153,7 +158,7 @@ content {
         }
 
         div {
-            font-size: 14spx;
+            font-size: 14px;
             color: vars.$grey-text;
             font-weight: 400;
             line-height: 22px;
@@ -189,7 +194,7 @@ content {
     }
 
     div {
-        font-size: 14spx;
+        font-size: 14px;
         color: vars.$grey-text;
         font-weight: 400;
         line-height: 22px;
@@ -264,77 +269,106 @@ content {
         /* Отступы сверху и снизу */
     }
 }
+
 .clients {
-h3 {
-color: rgba(50, 50, 100, 1);
-font-size: 14px;
-line-height: 17px;
-text-align: center;
-margin-top: 60px;
-margin-bottom: 30px;
-}
+    h3 {
+        color: rgba(50, 50, 100, 1);
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
 
 }
 
 .card {
-    height: 120px;
+    height: auto;
     width: auto;
     display: flex;
     justify-content: center;
-//    svg {
-//     z-index: 30;
-//    }
+
+    .color1,
+    .color2,
+    .color3,
+    .color4,
+    .color5,
+    .color6,
+    .color7,
+    .color8,
+    .color9,
+    .color10,
+    .color11,
+    .color12 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .color1 {
         background-color: rgba(28, 66, 128, 1);
+        height: 120px;
     }
 
     .color2 {
         background-color: rgba(20, 54, 70, 1);
+        height: 120px;
     }
 
     .color3 {
         background-color: rgba(253, 147, 57, 1);
+        height: 120px;
     }
 
     .color4 {
         background-color: rgba(158, 77, 195, 1);
+        height: 120px;
     }
 
     .color5 {
         background-color: rgba(253, 147, 57, 1);
+        height: 120px;
     }
 
     .color6 {
         background-color: rgba(226, 226, 228, 1);
+        height: 120px;
     }
 
     .color7 {
         background-color: rgba(199, 28, 54, 1);
+        height: 120px;
     }
 
     .color8 {
         background-color: rgba(220, 243, 249, 1);
+        height: 120px;
     }
 
     .color9 {
         background-color: rgba(234, 234, 234, 1);
+        height: 120px;
     }
 
     .color10 {
         background-color: rgba(40, 34, 64, 1);
+        height: 120px;
     }
 
     .color11 {
         background-color: rgba(29, 69, 104, 1);
+        height: 120px;
     }
 
     .color12 {
         background-color: rgba(0, 0, 0, 1);
+        height: 120px;
     }
 }
 
-    @media screen and (min-width: 768px) {
-        content {
-            margin: 0 15px;
-        }
+@media screen and (min-width: 768px) {
+    content {
+        margin: 0 15px;
     }
+}
