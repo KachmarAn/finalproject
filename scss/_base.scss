@@ -108,38 +108,82 @@ p {
   border-radius: 24px;
   background-color: rgba(255, 255, 255, 1);
 }
+input { 
+  display: none;
+}
 
 @media screen and (min-width: 375px) {
-  .splash {
+  .content {
     max-width: calc (315px + 15px + 15px);
     padding: 0 15px;
   }
+  .logo {
+    display: none;
+  }
+  .top a  {
+    display: none;
+   }
+    .pinned  li {
+display: none;
+
+    }
+.top {
+    height: 45px;
+    background-color: rgba(245, 245, 250, 0.2);
+}
+
+.pinned {
+display: flex;
+align-items: center;
+  height: 57px;
+
+}
 }
 
 @media screen and (min-width: 767px) {
-  .splash {
+  .content {
     max-width: calc (648px + 30px + 30px);
     padding: 0 30px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .splash {
+  .content {
     max-width: calc (904px + 60px + 60px);
     padding: 0 60px;
   }
+  .top {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.0);
 }
 
+  .logo1 {
+    display: none;
+  }
+  .logo{
+    display: block;
+  }
+  }
+
 @media screen and (min-width: 1440px) {
-  .splash {
+  .content {
     max-width: calc (1320px + 60px + 60px);
     padding: 0 60px;
   }
-}
+ }
 
 @media screen and (min-width: 1920px) {
-  .splash {
+  .content {
     max-width: calc (1600px + 160px + 160px);
     padding: 0 160px;
   }
+
+}
+.splash {
+  background-image: url('../svg/Symbol.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  // width: auto; 
+  height: 100vh; /* Задайте высоту блока */
 }

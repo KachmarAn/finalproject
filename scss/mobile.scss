@@ -1,0 +1,170 @@
+@media screen and (min-width: 375px) {
+
+    .frame3 {
+        li {
+            // display: flex;
+            // flex-direction: row;
+            // align-items: center;
+            // flex-wrap: nowrap;
+            // justify-content: space-between;
+            color: rgba(179, 179, 186, 1);
+            display: grid;
+            cursor: pointer;
+        }
+
+        li:hover {
+            color: rgba(240, 20, 90, 1);
+        }
+
+    }
+
+    .line {
+        display: block;
+        /* Делает <span> блочным элементом */
+        width: auto;
+        /* Ширина линии */
+        height: 4px;
+        /* Толщина линии */
+        background-color: rgba(255, 255, 255, 0.3);
+        /* Цвет линии */
+        margin: 30px 30px;
+        /* Отступы сверху и снизу */
+    }
+
+    .turn {
+        min-width: 315px;
+        min-height: 318px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        h2 {
+            color: rgba(255, 255, 255, 1);
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 1);
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+    }
+
+    .grid {
+        min-width: 315px;
+
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            color: rgba(240, 20, 90, 1);
+
+        }
+
+        a {
+            font-size: 14px;
+            color: rgba(36, 163, 255, 1);
+            font-weight: 700;
+            line-height: 17px;
+            margin-bottom: 10px;
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icong {
+            min-width: 315px;
+            height: auto;
+            margin-bottom: 30px;
+            margin-top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        h3 {
+            color: rgba(36, 163, 255, 1);
+            font-size: 22px;
+            line-height: 26px;
+            margin-top: 30px;
+        }
+
+        div {
+            color: rgba(255, 255, 255, 1);
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 400;
+            margin-top: 15px;
+        }
+
+
+    }
+
+    .team {
+        width: 315px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 30px;
+        margin-top: 30px;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        .part {
+            width: 315px;
+        }
+    }
+
+    .part2 {
+        h1 {
+            font-size: 30px;
+        }
+
+        .item {
+            margin-bottom: 30px;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .color1,
+    .color2,
+    .color3,
+    .color4,
+    .color5,
+    .color6,
+    .color7,
+    .color8,
+    .color9,
+    .color10,
+    .color11,
+    .color12 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+
+
+
+
+
+}

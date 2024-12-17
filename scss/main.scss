@@ -1,10 +1,37 @@
 //подключенные модули
 
 @use 'base' as vars;
+@use 'mobile';
+
+.content {
+    background-color: vars.$main;
+    width: 100%;
+}
 
 .splash {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-    background-color: vars.$main;
+
+    h2 {
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .scroll {
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
 }
 
 content {
@@ -44,14 +71,16 @@ content {
         font-size: 1rem;
         margin-right: 0.5rem;
     }
+
     .svg:hover {
         fill: vars.$accent;
-      }
- }
+    }
+}
 
- .pinned {
+.pinned {
     display: flex;
     justify-content: space-between;
+
     ul {
         display: flex;
         padding: 0;
@@ -60,15 +89,252 @@ content {
         color: rgba(255, 255, 255, 1);
     }
 }
+
 .checkbox {
     display: none;
 }
-.burger-icon  {
+
+.burger-icon {
     display: none;
 }
-@media screen and (min-width: 768px) {
-  content {
-    margin: 0 15px;
-  }
-  }
-  
+
+.frame3 {
+    display: flex;
+}
+
+content {
+    width: 200px;
+    height: 100px;
+    background-color: #f4f4f4;
+    box-shadow:
+        5px 5px 10px rgba(0, 0, 0, 0.3),
+        /* Первая тень */
+        -5px -5px 10px rgba(255, 255, 255, 0.5);
+    /* Вторая тень */
+    padding: 20px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.team {
+
+    img {
+        width: 100%;
+        /* По умолчанию изображение занимает всю ширину контейнера */
+        max-width: 500px;
+        /* Ограничиваем максимальную ширину */
+        height: auto;
+        /* Сохраняем пропорции */
+    }
+
+    a {
+        font-size: 14px;
+        color: rgba(36, 163, 255, 1);
+        font-weight: 700;
+        line-height: 17px;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        color: vars.$accent;
+    }
+
+    .part {
+        padding: 30px 30px 30px 30px;
+        background-color: vars.$grey-bg;
+
+        h4 {
+            font-size: 16px;
+            color: vars.$grey-text;
+            font-weight: 700;
+            line-height: 19px;
+            margin-bottom: 6px;
+            margin-top: 30px;
+        }
+
+        div {
+            font-size: 14spx;
+            color: vars.$grey-text;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+}
+
+.part2 {
+    padding: 30px 30px 30px 30px;
+    background-color: vars.$grey-bg;
+
+    a {
+        font-size: 14px;
+        color: rgba(36, 163, 255, 1);
+        font-weight: 700;
+        line-height: 17px;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        margin-top: 10px;
+        color: vars.$accent;
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        font-size: 16px;
+        color: vars.$grey-text;
+        font-weight: 700;
+        line-height: 19px;
+        margin-bottom: 6px;
+        margin-top: 30px;
+    }
+
+    div {
+        font-size: 14spx;
+        color: vars.$grey-text;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    img {
+        height: 100%;
+        /* По умолчанию изображение занимает всю ширину контейнера */
+        max-height: 200px;
+        /* Ограничиваем максимальную ширину */
+        width: 100%;
+        /* Сохраняем пропорции */
+        border-radius: 8px 8px 0 0;
+    }
+
+    .item {
+        background-color: rgba(255, 255, 255, 1);
+
+        .line1 {
+            display: block;
+            /* Делает <span> блочным элементом */
+            width: auto;
+            /* Ширина линии */
+            height: 4px;
+            /* Толщина линии */
+            background-color: rgba(230, 230, 240, 1);
+            /* Цвет линии */
+            margin: 15px 0px;
+            /* Отступы сверху и снизу */
+        }
+
+        div {
+            padding: 15px 30px;
+
+            p {
+                margin: 15px 0;
+            }
+
+            h4 {
+                font-size: 16px;
+                color: vars.$regular;
+                font-weight: 700;
+                line-height: 19px;
+            }
+
+            .date {
+                font-size: 12px;
+                color: vars.$grey-text;
+                font-weight: 700;
+                line-height: 14px;
+            }
+
+            .smal {
+                font-size: 12px;
+                color: rgba(0, 0, 0, 1);
+                font-weight: 400;
+                line-height: 22px;
+            }
+        }
+    }
+
+    .line2 {
+        display: block;
+        /* Делает <span> блочным элементом */
+        width: auto;
+        /* Ширина линии */
+        height: 2px;
+        /* Толщина линии */
+        background-color: rgba(230, 230, 240, 1);
+        /* Цвет линии */
+        margin: 15px 0 30px;
+        /* Отступы сверху и снизу */
+    }
+}
+.clients {
+h3 {
+color: rgba(50, 50, 100, 1);
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+margin-top: 60px;
+margin-bottom: 30px;
+}
+
+}
+
+.card {
+    height: 120px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+//    svg {
+//     z-index: 30;
+//    }
+    .color1 {
+        background-color: rgba(28, 66, 128, 1);
+    }
+
+    .color2 {
+        background-color: rgba(20, 54, 70, 1);
+    }
+
+    .color3 {
+        background-color: rgba(253, 147, 57, 1);
+    }
+
+    .color4 {
+        background-color: rgba(158, 77, 195, 1);
+    }
+
+    .color5 {
+        background-color: rgba(253, 147, 57, 1);
+    }
+
+    .color6 {
+        background-color: rgba(226, 226, 228, 1);
+    }
+
+    .color7 {
+        background-color: rgba(199, 28, 54, 1);
+    }
+
+    .color8 {
+        background-color: rgba(220, 243, 249, 1);
+    }
+
+    .color9 {
+        background-color: rgba(234, 234, 234, 1);
+    }
+
+    .color10 {
+        background-color: rgba(40, 34, 64, 1);
+    }
+
+    .color11 {
+        background-color: rgba(29, 69, 104, 1);
+    }
+
+    .color12 {
+        background-color: rgba(0, 0, 0, 1);
+    }
+}
+
+    @media screen and (min-width: 768px) {
+        content {
+            margin: 0 15px;
+        }
+    }

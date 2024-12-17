@@ -39,6 +39,11 @@ h4 {
   font-size: 16px;
 }
 
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .btn-lang {
   width: 33px;
   height: 25px;
@@ -76,39 +81,237 @@ h4 {
   background-color: rgb(230, 230, 240);
 }
 
+.icon {
+  width: 92px;
+  height: 92px;
+  border-radius: 24px;
+  background-color: rgb(255, 255, 255);
+}
+
+input {
+  display: none;
+}
+
 @media screen and (min-width: 375px) {
-  .splash {
+  .content {
     max-width: calc 345px;
     padding: 0 15px;
   }
+  .logo {
+    display: none;
+  }
+  .top a {
+    display: none;
+  }
+  .pinned li {
+    display: none;
+  }
+  .top {
+    height: 45px;
+    background-color: rgba(245, 245, 250, 0.2);
+  }
+  .pinned {
+    display: flex;
+    align-items: center;
+    height: 57px;
+  }
 }
 @media screen and (min-width: 767px) {
-  .splash {
+  .content {
     max-width: calc 708px;
     padding: 0 30px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .splash {
+  .content {
     max-width: calc 1024px;
     padding: 0 60px;
   }
+  .top {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .logo1 {
+    display: none;
+  }
+  .logo {
+    display: block;
+  }
 }
 @media screen and (min-width: 1440px) {
-  .splash {
+  .content {
     max-width: calc 1440px;
     padding: 0 60px;
   }
 }
 @media screen and (min-width: 1920px) {
-  .splash {
+  .content {
     max-width: calc 1920px;
     padding: 0 160px;
   }
 }
 .splash {
-  height: 100vh;
+  background-image: url("../svg/Symbol.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh; /* Задайте высоту блока */
+}
+
+@media screen and (min-width: 375px) {
+  .frame3 li {
+    color: rgb(179, 179, 186);
+    display: grid;
+    cursor: pointer;
+  }
+  .frame3 li:hover {
+    color: rgb(240, 20, 90);
+  }
+  .line {
+    display: block;
+    /* Делает <span> блочным элементом */
+    width: auto;
+    /* Ширина линии */
+    height: 4px;
+    /* Толщина линии */
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Цвет линии */
+    margin: 30px 30px;
+    /* Отступы сверху и снизу */
+  }
+  .turn {
+    min-width: 315px;
+    min-height: 318px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .turn h2 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .turn p {
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .grid {
+    min-width: 315px;
+    display: flex;
+    flex-direction: column;
+  }
+  .grid h1 {
+    color: rgb(240, 20, 90);
+  }
+  .grid a {
+    font-size: 14px;
+    color: rgb(36, 163, 255);
+    font-weight: 700;
+    line-height: 17px;
+    margin-bottom: 10px;
+  }
+  .grid .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid .icong {
+    min-width: 315px;
+    height: auto;
+    margin-bottom: 30px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .grid h3 {
+    color: rgb(36, 163, 255);
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 30px;
+  }
+  .grid div {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-top: 15px;
+  }
+  .team {
+    width: 315px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+    margin-top: 30px;
+  }
+  .team h1 {
+    font-size: 30px;
+  }
+  .team .part {
+    width: 315px;
+  }
+  .part2 h1 {
+    font-size: 30px;
+  }
+  .part2 .item {
+    margin-bottom: 30px;
+    border-radius: 0 0 8px 8px;
+  }
+  .part2 .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .color1,
+  .color2,
+  .color3,
+  .color4,
+  .color5,
+  .color6,
+  .color7,
+  .color8,
+  .color9,
+  .color10,
+  .color11,
+  .color12 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.content {
   background-color: rgb(50, 50, 100);
+  width: 100%;
+}
+
+.splash {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.splash h2 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.splash .scroll {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 content {
@@ -167,6 +370,201 @@ content {
 
 .burger-icon {
   display: none;
+}
+
+.frame3 {
+  display: flex;
+}
+
+content {
+  width: 200px;
+  height: 100px;
+  background-color: #f4f4f4;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.5);
+  /* Вторая тень */
+  padding: 20px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.team img {
+  width: 100%;
+  /* По умолчанию изображение занимает всю ширину контейнера */
+  max-width: 500px;
+  /* Ограничиваем максимальную ширину */
+  height: auto;
+  /* Сохраняем пропорции */
+}
+.team a {
+  font-size: 14px;
+  color: rgb(36, 163, 255);
+  font-weight: 700;
+  line-height: 17px;
+  margin-bottom: 10px;
+}
+.team h1 {
+  color: rgb(240, 20, 90);
+}
+.team .part {
+  padding: 30px 30px 30px 30px;
+  background-color: rgb(245, 245, 250);
+}
+.team .part h4 {
+  font-size: 16px;
+  color: rgb(179, 179, 186);
+  font-weight: 700;
+  line-height: 19px;
+  margin-bottom: 6px;
+  margin-top: 30px;
+}
+.team .part div {
+  font-size: 14spx;
+  color: rgb(179, 179, 186);
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.part2 {
+  padding: 30px 30px 30px 30px;
+  background-color: rgb(245, 245, 250);
+}
+.part2 a {
+  font-size: 14px;
+  color: rgb(36, 163, 255);
+  font-weight: 700;
+  line-height: 17px;
+  margin-bottom: 10px;
+}
+.part2 h1 {
+  margin-top: 10px;
+  color: rgb(240, 20, 90);
+  margin-bottom: 30px;
+}
+.part2 h4 {
+  font-size: 16px;
+  color: rgb(179, 179, 186);
+  font-weight: 700;
+  line-height: 19px;
+  margin-bottom: 6px;
+  margin-top: 30px;
+}
+.part2 div {
+  font-size: 14spx;
+  color: rgb(179, 179, 186);
+  font-weight: 400;
+  line-height: 22px;
+}
+.part2 img {
+  height: 100%;
+  /* По умолчанию изображение занимает всю ширину контейнера */
+  max-height: 200px;
+  /* Ограничиваем максимальную ширину */
+  width: 100%;
+  /* Сохраняем пропорции */
+  border-radius: 8px 8px 0 0;
+}
+.part2 .item {
+  background-color: rgb(255, 255, 255);
+}
+.part2 .item .line1 {
+  display: block;
+  /* Делает <span> блочным элементом */
+  width: auto;
+  /* Ширина линии */
+  height: 4px;
+  /* Толщина линии */
+  background-color: rgb(230, 230, 240);
+  /* Цвет линии */
+  margin: 15px 0px;
+  /* Отступы сверху и снизу */
+}
+.part2 .item div {
+  padding: 15px 30px;
+}
+.part2 .item div p {
+  margin: 15px 0;
+}
+.part2 .item div h4 {
+  font-size: 16px;
+  color: rgb(36, 163, 255);
+  font-weight: 700;
+  line-height: 19px;
+}
+.part2 .item div .date {
+  font-size: 12px;
+  color: rgb(179, 179, 186);
+  font-weight: 700;
+  line-height: 14px;
+}
+.part2 .item div .smal {
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  line-height: 22px;
+}
+.part2 .line2 {
+  display: block;
+  /* Делает <span> блочным элементом */
+  width: auto;
+  /* Ширина линии */
+  height: 2px;
+  /* Толщина линии */
+  background-color: rgb(230, 230, 240);
+  /* Цвет линии */
+  margin: 15px 0 30px;
+  /* Отступы сверху и снизу */
+}
+
+.clients h3 {
+  color: rgb(50, 50, 100);
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.card {
+  height: 120px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+.card .color1 {
+  background-color: rgb(28, 66, 128);
+}
+.card .color2 {
+  background-color: rgb(20, 54, 70);
+}
+.card .color3 {
+  background-color: rgb(253, 147, 57);
+}
+.card .color4 {
+  background-color: rgb(158, 77, 195);
+}
+.card .color5 {
+  background-color: rgb(253, 147, 57);
+}
+.card .color6 {
+  background-color: rgb(226, 226, 228);
+}
+.card .color7 {
+  background-color: rgb(199, 28, 54);
+}
+.card .color8 {
+  background-color: rgb(220, 243, 249);
+}
+.card .color9 {
+  background-color: rgb(234, 234, 234);
+}
+.card .color10 {
+  background-color: rgb(40, 34, 64);
+}
+.card .color11 {
+  background-color: rgb(29, 69, 104);
+}
+.card .color12 {
+  background-color: rgb(0, 0, 0);
 }
 
 @media screen and (min-width: 768px) {
