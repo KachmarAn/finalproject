@@ -1,0 +1,169 @@
+@media screen and (min-width: 1024px) {
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 5px;
+
+        .top {
+            width: 478px;
+            align-items: center;
+        }
+
+        .pinned {
+            width: 478px;
+            height: 66px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: end;
+            /* Основное направление - столбцы */
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            /* Выравниваем элементы по ширине */
+            align-items: center;
+            /* Выравниваем элементы по вертикали */
+        }
+
+        .top ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .top li {
+            margin-left: 10px;
+            /* Отступ между элементами списка */
+        }
+
+        .menu ul {
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+
+            /* Распределяем элементы меню по ширине */
+            li {
+                margin-left: 15px;
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+    }
+
+    .exper {
+        display: flex;
+        margin: 60px 0;
+        justify-content: space-between;
+
+        .frame3 {
+            display: flex;
+            max-width: 375px;
+            height: 285px;
+            margin: 10px 0;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 60px;
+
+            h1 {
+                font-size: 30px;
+            }
+
+            ul li {
+                display: grid;
+                grid-template-rows: repeat(auto-fill, minmax(68.5px, 1fr));
+                gap: 20px;
+                align-items: center;
+                justify-items: end;
+            }
+        }
+
+        span {
+            // transform: rotate(90deg);
+            width: 4px;
+            height: 303px;
+            margin: 0;
+        }
+
+        .turn {
+            margin: 10px 0;
+            margin-left: 60px;
+            height: 285px;
+            width: 405px;
+
+            h2 {
+                font-size: 30px;
+                line-height: 36px;
+                margin: 0;
+            }
+        }
+    }
+
+    .grid div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Разбиваем на 3 равные колонки */
+        grid-gap: 20px;
+
+        /* Отступы между элементами */
+        .icong {
+            min-width: auto;
+        }
+    }
+
+    .team {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: 528px;
+        align-items: flex-start;
+
+        h1 {
+            font-size: 38px;
+            line-height: 46px;
+        }
+
+        img {
+            width: 400px;
+            height: 528px;
+            object-fit: cover;
+            border-radius: 12px 0 0 12px;
+        }
+
+        .part {
+            height: 528px;
+            border-radius: 0 12px 12px 0;
+        }
+    }
+
+    .part2 {
+        div {
+            display: flex;
+
+            .item {
+                width: 821px;
+            }
+
+            h1 {
+                font-size: 38px;
+                line-height: 46px;
+            }
+        }
+    }
+
+
+
+
+
+
+
+}
