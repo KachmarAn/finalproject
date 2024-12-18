@@ -119,17 +119,23 @@ input {
 .content {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   width: 100%;
+  padding: 20px;
+  box-shadow: 
+  20px 10px 12px rgba(202, 202, 219, 1), /* Первая тень */
+  40px 20px 24px rgba(231, 231, 242, 1); /* Вторая тень */
 }
 
 @media screen and (min-width: 375px) {
   .content {
     max-width: calc (315px + 15px + 15px);
-    padding: 0 15px;
+    padding: 0 30px;
   }
-
-  .logo {
+  .desktop {
     display: none;
   }
+  // .logo {
+  //   display: none;
+  // }
 
 
   .top {
@@ -148,7 +154,7 @@ input {
 @media screen and (min-width: 767px) {
   .content {
     max-width: calc (648px + 30px + 30px);
-    padding: 0 30px;
+    padding: 0 60px;
   }
 }
 
@@ -192,7 +198,5 @@ input {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  // width: auto; 
-  height: 100vh;
-  /* Задайте высоту блока */
+   height: 100vh;
 }

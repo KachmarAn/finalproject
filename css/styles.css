@@ -95,14 +95,16 @@ input {
 .content {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   width: 100%;
+  padding: 20px;
+  box-shadow: 20px 10px 12px rgb(202, 202, 219), 40px 20px 24px rgb(231, 231, 242); /* Вторая тень */
 }
 
 @media screen and (min-width: 375px) {
   .content {
     max-width: calc 345px;
-    padding: 0 15px;
+    padding: 0 30px;
   }
-  .logo {
+  .desktop {
     display: none;
   }
   .top {
@@ -118,7 +120,7 @@ input {
 @media screen and (min-width: 767px) {
   .content {
     max-width: calc 708px;
-    padding: 0 30px;
+    padding: 0 60px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -155,18 +157,16 @@ input {
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
-  /* Задайте высоту блока */
 }
 
 @media screen and (min-width: 375px) {
-  .top a {
-    display: none;
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-  .contacts .top ul li {
-    display: none;
-  }
-  .pinned li {
-    display: none;
+  .top ul {
+    color: #fff;
   }
   .frame3 li {
     display: inline-block;
@@ -190,7 +190,6 @@ input {
   }
   .turn {
     min-width: 315px;
-    min-height: 318px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -200,6 +199,7 @@ input {
     color: rgb(255, 255, 255);
     font-size: 20px;
     line-height: 24px;
+    margin-bottom: 30px;
   }
   .turn p {
     color: rgb(255, 255, 255);
@@ -263,6 +263,9 @@ input {
   }
   .team img {
     border-radius: 12px 12px 0 0;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
   }
   .team .part {
     width: 315px;
@@ -299,6 +302,182 @@ input {
   div .card .color7 {
     display: none;
   }
+  /* Общий стиль для контейнера */
+  .burger-menu {
+    position: fixed;
+    right: 16px;
+    z-index: 1000;
+  }
+  .burger-menu div {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background-color: aqua;
+    padding: 10px 7px;
+  }
+  /* Бургер-кнопка */
+  .menu-button {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    padding-left: 7px;
+    padding-top: 5px;
+    border-radius: 8px;
+  }
+  .menu-button:active {
+    background-color: rgb(230, 230, 240);
+  }
+  .menu-button span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: #fff;
+    margin-top: 4px;
+    transition: all 0.3s ease;
+  }
+  /* Контейнер для меню */
+  .menu-list {
+    position: fixed;
+    bottom: -100%;
+    border-radius: 12px 12px 0 0;
+    /* Скрываем меню ниже экрана */
+    left: 2.5%;
+    width: 95%;
+    height: auto;
+    /* Меню занимает всю высоту экрана */
+    background: rgb(255, 255, 255);
+    /* Фон меню */
+    color: rgb(36, 163, 255);
+    z-index: 999;
+    transition: bottom 0.4s ease;
+    /* Анимация появления */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Список внутри меню */
+  .menu-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .menu-list ul li {
+    margin: 15px 0;
+    width: 335px;
+    height: 43px;
+    border-radius: 12px;
+    background-color: rgb(245, 245, 250);
+  }
+  .menu-list ul li a {
+    text-decoration: none;
+    color: rgb(36, 163, 255);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 43px;
+    transition: color 0.3s ease;
+  }
+  .menu-list ul li a:hover {
+    color: rgb(240, 20, 90);
+    /* Цвет текста при наведении */
+  }
+  /* Раскрытие меню при активации чекбокса */
+  #menu-toggle:checked ~ .menu-list {
+    bottom: 0;
+    /* Меню поднимается на весь экран */
+  }
+}
+@media screen and (min-width: 767px) {
+  .turn {
+    max-height: 187px;
+  }
+  .grid div {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+    margin-bottom: 60px;
+  }
+  .grid h1 {
+    margin-bottom: 60px;
+  }
+  .grid .icong {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+  .grid .icong .icon {
+    margin: 0;
+  }
+  .grid .icong div {
+    display: flex;
+  }
+  .content {
+    border-radius: 0 0 12px 12px;
+  }
+  .team {
+    width: 648px;
+    display: flex;
+    align-items: center;
+    margin: 60px 60px 0 60px;
+  }
+  .team .imgt {
+    width: 648px;
+    height: 500px;
+  }
+  .team img {
+    height: auto;
+    object-fit: cover;
+  }
+  .team .part {
+    width: auto;
+  }
+  .clients div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .clients div .color1,
+  .clients div .color2,
+  .clients div .color3,
+  .clients div .color4,
+  .clients div .color5,
+  .clients div .color6,
+  .clients div .color7,
+  .clients div .color8,
+  .clients div .color9,
+  .clients div .color10,
+  .clients div .color11,
+  .clients div .color12 {
+    min-width: 256px;
+    display: flex;
+  }
+  .part2 div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    /* Создаем 2 колонки равной ширины */
+    /* Отступы между элементами */
+  }
+  .part2 div .item {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .part2 div .item div {
+    display: flex;
+    flex-direction: column;
+  }
+  .part2 div .item:nth-child(3) {
+    grid-column: 1/span 2;
+    /* Занимаем две колонки */
+  }
+  .part2 div .asociat {
+    display: flex;
+    gap: 0;
+  }
 }
 .splash {
   display: flex;
@@ -332,59 +511,6 @@ content {
   align-items: center;
 }
 
-.contacts .top {
-  display: flex;
-  align-items: center;
-  gap: 0;
-}
-.contacts .top ul {
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
-.contacts .top li {
-  display: flex;
-  align-items: center;
-  position: relative;
-  color: rgb(255, 255, 255);
-}
-.contacts .top li:not(:last-child)::after {
-  content: "•";
-  color: rgb(255, 255, 255);
-  font-size: 1rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-.contacts .top li:first-child::before {
-  content: "•";
-  color: rgb(255, 255, 255);
-  font-size: 1rem;
-  margin-right: 0.5rem;
-}
-.contacts .top .svg:hover {
-  fill: rgb(240, 20, 90);
-}
-
-.pinned {
-  display: flex;
-  justify-content: space-between;
-}
-.pinned ul {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  gap: 20px;
-  color: rgb(255, 255, 255);
-}
-
-.checkbox {
-  display: none;
-}
-
-.burger-icon {
-  display: none;
-}
-
 .frame3 {
   display: flex;
 }
@@ -400,14 +526,6 @@ content {
   line-height: 100px;
 }
 
-.team img {
-  width: 100%;
-  /* По умолчанию изображение занимает всю ширину контейнера */
-  max-width: 500px;
-  /* Ограничиваем максимальную ширину */
-  height: auto;
-  /* Сохраняем пропорции */
-}
 .team a {
   font-size: 14px;
   color: rgb(36, 163, 255);
@@ -473,6 +591,7 @@ content {
   max-height: 200px;
   /* Ограничиваем максимальную ширину */
   width: 100%;
+  object-fit: cover;
   /* Сохраняем пропорции */
   border-radius: 8px 8px 0 0;
 }

@@ -1,0 +1,128 @@
+@media screen and (min-width: 767px) {
+
+    .turn {
+        max-height: 187px;
+    }
+
+    .grid {
+        div {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 10px;
+            margin-bottom: 60px;
+
+        }
+
+        h1 {
+            margin-bottom: 60px;
+        }
+    }
+
+    .grid .icong {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+
+        .icon {
+            margin: 0;
+        }
+
+        div {
+            display: flex;
+        }
+    }
+
+
+    .content {
+        border-radius: 0 0 12px 12px;
+    }
+
+    .team {
+        width: 648px;
+        display: flex;
+        align-items: center;
+        margin: 60px 60px 0 60px;
+
+        .imgt {
+            width: 648px;
+            height: 500px;
+        }
+
+        img {
+            height: auto;
+            object-fit: cover
+        }
+
+        .part {
+            width: auto;
+        }
+    }
+
+    .clients {
+        div {
+            display: flex;
+            flex-wrap: wrap;
+
+            .color1,
+            .color2,
+            .color3,
+            .color4,
+            .color5,
+            .color6,
+            .color7,
+            .color8,
+            .color9,
+            .color10,
+            .color11,
+            .color12 {
+                min-width: 256px;
+                display: flex;
+            }
+        }
+    }
+
+    .part2 {
+        div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            /* Создаем 2 колонки равной ширины */
+            //    row-gap: 30px;
+
+            /* Отступы между элементами */
+            .item {
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+            }
+
+            .item:nth-child(3) {
+                grid-column: 1 / span 2;
+                /* Занимаем две колонки */
+            }
+
+            .asociat {
+                display: flex;
+                gap: 0;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+}
