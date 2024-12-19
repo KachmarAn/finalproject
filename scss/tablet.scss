@@ -112,6 +112,129 @@
                 gap: 0;
             }
         }
+
+        .mobile-foot {
+            display: none;
+        }
+
+        .desktop-foot {
+            display: flex;
+            justify-content: space-between;
+            h6 {
+                font-size: 16px;
+                line-height: 19px;
+                font-weight: 400;
+                color: rgba(179, 179, 186, 1);
+            }
+        }
+
+        .info-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: auto;
+            height: 80px;
+            gap: 0;
+
+            .address {
+
+                li:nth-child(1) a {
+                    font-size: 16px;
+                    line-height: 19px;
+                    font-weight: 400;
+                    color: rgba(50, 50, 100, 1);
+                }
+
+                li:nth-child(2) {
+                    font-size: 12px;
+                    line-height: 14px;
+                    font-weight: 700;
+                    color: rgba(36, 163, 255, 1);
+                }
+
+                li::after {
+                    content: "•";
+                    /* Добавляем разделитель */
+                    color: rgba(179, 179, 186, 1);
+                    /* Цвет точки */
+                    margin-left: 7px;
+                    /* Отступ между текстом и точкой */
+                    margin-right: 7px;
+                    font-size: 2rem;
+                }
+
+                li:last-child::after {
+                    content: "";
+                    /* Убираем точку у последнего элемента */
+                }
+            }
+
+            .contact {
+                li:nth-child(1) svg:hover {
+                    fill: rgba(240, 20, 90, 1);
+                    margin: 5px;
+                }
+
+                li:nth-child(2) a {
+                    font-size: 16px;
+                    line-height: 19px;
+                    font-weight: 700;
+                    color: rgba(70, 70, 110, 1);
+                    margin: 10px 0;
+                }
+
+                li:nth-child(3) a {
+                    font-size: 16px;
+                    line-height: 19px;
+                    font-weight: 700;
+                    color: rgba(36, 163, 255, 1);
+                }
+
+                li:nth-child(3) a:hover {
+                    color: rgba(240, 20, 90, 1);
+                }
+
+                li::after {
+                    content: "•";
+                    /* Добавляем разделитель */
+                    color: rgba(179, 179, 186, 1);
+                    /* Цвет точки */
+                    margin-left: 7px;
+                    /* Отступ между текстом и точкой */
+                    margin-right: 7px;
+                    font-size: 2rem;
+                }
+
+                li:last-child::after {
+                    content: "";
+                    /* Убираем точку у последнего элемента */
+                }
+            }
+
+           
+        }
+
+
+        .row {
+            width: auto;
+            display: flex;
+            // flex-direction: row;
+            justify-content: space-between;
+            // flex-wrap: wrap;
+        }
+
+        .address,
+        .contact {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+
+
+
     }
 
 

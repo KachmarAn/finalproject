@@ -36,6 +36,11 @@ $gradient-red-text: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   text-decoration: none
 }
 
+html {
+  scroll-behavior: smooth;
+  /* Включаем плавную прокрутку */
+}
+
 h1,
 h2,
 h3,
@@ -47,23 +52,28 @@ strong {
 
 h1 {
   font-size: 38px;
+  line-height: 46px;
 }
 
 h2 {
   font-size: 30px;
+  line-height: 36px;
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 22px;
+  line-height: 27px;
 }
 
 h4 {
   font-size: 16px;
+  line-height: 19px;
 }
 
 p {
   font-size: 16px;
   font-weight: 400;
+  line-height: 26px;
 }
 
 .btn-lang {
@@ -120,9 +130,11 @@ input {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   width: 100%;
   padding: 20px;
-  box-shadow: 
-  20px 10px 12px rgba(202, 202, 219, 1), /* Первая тень */
-  40px 20px 24px rgba(231, 231, 242, 1); /* Вторая тень */
+  box-shadow:
+    20px 10px 12px rgba(202, 202, 219, 1),
+    /* Первая тень */
+    40px 20px 24px rgba(231, 231, 242, 1);
+  /* Вторая тень */
 }
 
 @media screen and (min-width: 375px) {
@@ -130,9 +142,11 @@ input {
     max-width: calc (315px + 15px + 15px);
     padding: 0 30px;
   }
+
   .desktop {
     display: none;
   }
+
   // .logo {
   //   display: none;
   // }
@@ -149,12 +163,20 @@ input {
     height: 57px;
 
   }
+
+  .desktop-foot {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 767px) {
   .content {
     max-width: calc (648px + 30px + 30px);
     padding: 0 60px;
+  }
+
+  .mobile-foot {
+    display: none;
   }
 }
 
@@ -198,5 +220,5 @@ input {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-   height: 100vh;
+  height: 100vh;
 }

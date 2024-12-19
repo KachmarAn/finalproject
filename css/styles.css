@@ -14,6 +14,11 @@ body {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+  /* Включаем плавную прокрутку */
+}
+
 h1,
 h2,
 h3,
@@ -25,23 +30,28 @@ strong {
 
 h1 {
   font-size: 38px;
+  line-height: 46px;
 }
 
 h2 {
   font-size: 30px;
+  line-height: 36px;
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 22px;
+  line-height: 27px;
 }
 
 h4 {
   font-size: 16px;
+  line-height: 19px;
 }
 
 p {
   font-size: 16px;
   font-weight: 400;
+  line-height: 26px;
 }
 
 .btn-lang {
@@ -96,7 +106,8 @@ input {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   width: 100%;
   padding: 20px;
-  box-shadow: 20px 10px 12px rgb(202, 202, 219), 40px 20px 24px rgb(231, 231, 242); /* Вторая тень */
+  box-shadow: 20px 10px 12px rgb(202, 202, 219), 40px 20px 24px rgb(231, 231, 242);
+  /* Вторая тень */
 }
 
 @media screen and (min-width: 375px) {
@@ -116,11 +127,17 @@ input {
     align-items: center;
     height: 57px;
   }
+  .desktop-foot {
+    display: none;
+  }
 }
 @media screen and (min-width: 767px) {
   .content {
     max-width: calc 708px;
     padding: 0 60px;
+  }
+  .mobile-foot {
+    display: none;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -213,7 +230,11 @@ input {
     flex-direction: column;
   }
   .grid h1 {
-    color: rgb(240, 20, 90);
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    /* Используем фон только для текста */
+    -webkit-text-fill-color: transparent;
+    /* Убираем заливку текста */
   }
   .grid a {
     font-size: 14px;
@@ -260,6 +281,11 @@ input {
   }
   .team h1 {
     font-size: 30px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    /* Используем фон только для текста */
+    -webkit-text-fill-color: transparent;
+    /* Убираем заливку текста */
   }
   .team img {
     border-radius: 12px 12px 0 0;
@@ -273,6 +299,11 @@ input {
   }
   .part2 h1 {
     font-size: 30px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    /* Используем фон только для текста */
+    -webkit-text-fill-color: transparent;
+    /* Убираем заливку текста */
   }
   .part2 .item {
     margin-bottom: 30px;
@@ -388,6 +419,59 @@ input {
     bottom: 0;
     /* Меню поднимается на весь экран */
   }
+  .mobile-foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile-foot li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile-foot div {
+    margin-bottom: 30px;
+  }
+  .mobile-foot h6 {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: rgb(179, 179, 186);
+  }
+  .mobile-foot ul li:nth-child(1) a {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: rgb(50, 50, 100);
+  }
+  .mobile-foot ul li:nth-child(2) {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    color: rgb(36, 163, 255);
+    margin-bottom: 21px;
+  }
+  .mobile-foot ul li:nth-child(3) svg:hover {
+    fill: rgb(240, 20, 90);
+    margin: 5px;
+  }
+  .mobile-foot ul li:nth-child(4) a {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    color: rgb(70, 70, 110);
+    margin: 10px 0;
+  }
+  .mobile-foot ul li:nth-child(5) a {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    color: rgb(36, 163, 255);
+  }
+  .mobile-foot ul li:nth-child(5) a:hover {
+    color: rgb(240, 20, 90);
+  }
 }
 @media screen and (min-width: 767px) {
   .turn {
@@ -477,6 +561,99 @@ input {
   .part2 div .asociat {
     display: flex;
     gap: 0;
+  }
+  .part2 .mobile-foot {
+    display: none;
+  }
+  .part2 .desktop-foot {
+    display: flex;
+    justify-content: space-between;
+  }
+  .part2 .desktop-foot h6 {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: rgb(179, 179, 186);
+  }
+  .part2 .info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    height: 80px;
+    gap: 0;
+  }
+  .part2 .info-container .address li:nth-child(1) a {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: rgb(50, 50, 100);
+  }
+  .part2 .info-container .address li:nth-child(2) {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    color: rgb(36, 163, 255);
+  }
+  .part2 .info-container .address li::after {
+    content: "•";
+    /* Добавляем разделитель */
+    color: rgb(179, 179, 186);
+    /* Цвет точки */
+    margin-left: 7px;
+    /* Отступ между текстом и точкой */
+    margin-right: 7px;
+    font-size: 2rem;
+  }
+  .part2 .info-container .address li:last-child::after {
+    content: "";
+    /* Убираем точку у последнего элемента */
+  }
+  .part2 .info-container .contact li:nth-child(1) svg:hover {
+    fill: rgb(240, 20, 90);
+    margin: 5px;
+  }
+  .part2 .info-container .contact li:nth-child(2) a {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    color: rgb(70, 70, 110);
+    margin: 10px 0;
+  }
+  .part2 .info-container .contact li:nth-child(3) a {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    color: rgb(36, 163, 255);
+  }
+  .part2 .info-container .contact li:nth-child(3) a:hover {
+    color: rgb(240, 20, 90);
+  }
+  .part2 .info-container .contact li::after {
+    content: "•";
+    /* Добавляем разделитель */
+    color: rgb(179, 179, 186);
+    /* Цвет точки */
+    margin-left: 7px;
+    /* Отступ между текстом и точкой */
+    margin-right: 7px;
+    font-size: 2rem;
+  }
+  .part2 .info-container .contact li:last-child::after {
+    content: "";
+    /* Убираем точку у последнего элемента */
+  }
+  .part2 .row {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .part2 .address,
+  .part2 .contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -584,7 +761,7 @@ input {
   .team {
     display: flex;
     flex-direction: row;
-    width: auto;
+    width: 904px;
     height: 528px;
     align-items: flex-start;
   }
@@ -611,6 +788,163 @@ input {
   .part2 div h1 {
     font-size: 38px;
     line-height: 46px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .exper {
+    width: 1080px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+  .exper .frame3 {
+    width: 375px;
+    height: 274px;
+  }
+  .exper .frame3 h1 {
+    font-size: 38px;
+  }
+  .exper .turn {
+    width: 581px;
+    height: 217px;
+  }
+  .grid .div {
+    height: 700px;
+  }
+  .grid .div .icong {
+    max-height: 320px;
+  }
+  .grid .icong {
+    gap: 0;
+  }
+  .grid > div {
+    gap: 60px;
+  }
+  .icong > div {
+    margin-bottom: 0;
+  }
+  .team {
+    width: 1320px;
+    height: 344px;
+  }
+  .team .imgt {
+    width: 400px;
+    height: 344px;
+  }
+  .team .imgt img {
+    width: 400px;
+    height: 344px;
+  }
+  .team .part {
+    height: 344px;
+  }
+  .clients .card .color1,
+  .clients .card .color2,
+  .clients .card .color3,
+  .clients .card .color4,
+  .clients .card .color5,
+  .clients .card .color6,
+  .clients .card .color7,
+  .clients .card .color8,
+  .clients .card .color9,
+  .clients .card .color10,
+  .clients .card .color11,
+  .clients .card .color12 {
+    width: 360px;
+  }
+  .part2 > div {
+    height: 450px;
+  }
+  .part2 > div .item {
+    height: 450px;
+  }
+  .part2 > div .item .asociat {
+    height: 450px;
+  }
+  .part2 > div .item .asociat h4,
+  .part2 > div .item .asociat span {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .exper {
+    width: 1360px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+  .exper .turn {
+    width: 861px;
+    height: 157px;
+  }
+  .team {
+    width: 1600px;
+    height: 298px;
+    margin-left: 160px;
+    margin-right: 160px;
+  }
+  .team .imgt {
+    width: 400px;
+    height: 298px;
+  }
+  .team .imgt img {
+    width: 400px;
+    height: 298px;
+  }
+  .team .part {
+    width: 1200px;
+    height: 298px;
+  }
+  .clients {
+    width: 1720px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 60px;
+  }
+  .clients .group {
+    border-radius: 12px 12px 12px 12px;
+  }
+  .clients .card .color1 {
+    border-radius: 12px 0 0 0;
+  }
+  .clients .card .color4 {
+    border-radius: 0 12px 0 0;
+  }
+  .clients .card .color9 {
+    border-radius: 0 0 0 12px;
+  }
+  .clients .card .color12 {
+    border-radius: 0 0 12px 0;
+  }
+  .clients .card .color1,
+  .clients .card .color2,
+  .clients .card .color3,
+  .clients .card .color4,
+  .clients .card .color5,
+  .clients .card .color6,
+  .clients .card .color7,
+  .clients .card .color8,
+  .clients .card .color9,
+  .clients .card .color10,
+  .clients .card .color11,
+  .clients .card .color12 {
+    width: 430px;
+  }
+  div > .part2 {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+  div > .part2 > div {
+    width: 1600px;
+    height: 430px;
+  }
+  div > .part2 > div .item {
+    height: 430px;
+  }
+  div > .part2 > div .item .asociat {
+    height: 430px;
   }
 }
 .splash {

@@ -1,0 +1,211 @@
+@media screen and (min-width: 1440px) {
+    .exper {
+        width: 1080px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 180px;
+        margin-right: 180px;
+
+        .frame3 {
+            width: 375px;
+            height: 274px;
+
+            // margin-right: 0;
+            h1 {
+                font-size: 38px;
+            }
+        }
+
+        .turn {
+            width: 581px;
+            height: 217px;
+        }
+    }
+
+    .grid {
+        .div {
+            height: 700px;
+
+            .icong {
+                max-height: 320px;
+            }
+        }
+
+        .icong {
+            gap: 0;
+        }
+    }
+
+    .grid>div {
+        gap: 60px;
+    }
+
+    .icong>div {
+        margin-bottom: 0;
+    }
+
+    .team {
+        width: 1320px;
+        height: 344px;
+
+        .imgt {
+            width: 400px;
+            height: 344px;
+
+            img {
+                width: 400px;
+                height: 344px;
+            }
+        }
+
+        .part {
+            height: 344px;
+        }
+    }
+
+    .clients {
+        .card {
+
+            .color1,
+            .color2,
+            .color3,
+            .color4,
+            .color5,
+            .color6,
+            .color7,
+            .color8,
+            .color9,
+            .color10,
+            .color11,
+            .color12 {
+                width: 360px;
+            }
+        }
+    }
+
+    .part2 {
+        >div {
+            height: 450px;
+
+            .item {
+                height: 450px;
+
+                .asociat {
+                    height: 450px;
+
+                    h4,
+                    span {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1920px) {
+    .exper {
+        width: 1360px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 180px;
+        margin-right: 180px;
+
+        .turn {
+            width: 861px;
+            height: 157px;
+        }
+    }
+
+    .team {
+        width: 1600px;
+        height: 298px;
+        margin-left: 160px;
+        margin-right: 160px;
+
+        .imgt {
+            width: 400px;
+            height: 298px;
+
+            img {
+                width: 400px;
+                height: 298px;
+            }
+        }
+
+        .part {
+            width: 1200px;
+            height: 298px;
+        }
+    }
+
+    .clients {
+        width: 1720px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 60px;
+
+        .group {
+            border-radius: 12px 12px 12px 12px;
+        }
+
+        .card {
+            .color1 {
+                border-radius: 12px 0 0 0;
+            }
+
+            .color4 {
+                border-radius: 0 12px 0 0;
+            }
+
+            .color9 {
+                border-radius: 0 0 0 12px;
+            }
+
+            .color12 {
+                border-radius: 0 0 12px 0;
+            }
+
+            .color1,
+            .color2,
+            .color3,
+            .color4,
+            .color5,
+            .color6,
+            .color7,
+            .color8,
+            .color9,
+            .color10,
+            .color11,
+            .color12 {
+                width: 430px;
+            }
+        }
+    }
+
+    div > .part2 {
+        padding-left: 180px;
+        padding-right: 180px;
+        
+        >div {
+            width: 1600px;
+            height: 430px;
+
+            .item {
+                height: 430px;
+
+                .asociat {
+                    height: 430px;
+
+                    // h4,
+                    // span {
+                    //     margin: 0;
+                    // }
+                }
+            }
+        }
+    }
+
+
+}

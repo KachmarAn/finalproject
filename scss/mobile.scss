@@ -64,7 +64,12 @@
         flex-direction: column;
 
         h1 {
-            color: rgba(240, 20, 90, 1);
+
+            background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+            -webkit-background-clip: text;
+            /* Используем фон только для текста */
+            -webkit-text-fill-color: transparent;
+            /* Убираем заливку текста */
         }
 
         a {
@@ -118,6 +123,11 @@
 
         h1 {
             font-size: 30px;
+            background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+            -webkit-background-clip: text;
+            /* Используем фон только для текста */
+            -webkit-text-fill-color: transparent;
+            /* Убираем заливку текста */
         }
 
         img {
@@ -136,6 +146,11 @@
     .part2 {
         h1 {
             font-size: 30px;
+            background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+            -webkit-background-clip: text;
+            /* Используем фон только для текста */
+            -webkit-text-fill-color: transparent;
+            /* Убираем заливку текста */
         }
 
         .item {
@@ -274,7 +289,68 @@
         /* Меню поднимается на весь экран */
     }
 
+    .mobile-foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div {
+            margin-bottom: 30px;
+        }
+
+        h6 {
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 400;
+            color: rgba(179, 179, 186, 1);
+        }
+
+        ul li:nth-child(1) a {
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 400;
+            color: rgba(50, 50, 100, 1);
+        }
+
+        ul li:nth-child(2) {
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 700;
+            color: rgba(36, 163, 255, 1);
+            margin-bottom: 21px;
+        }
+
+        ul li:nth-child(3) svg:hover {
+            fill: rgba(240, 20, 90, 1);
+            margin: 5px;
+        }
+
+        ul li:nth-child(4) a {
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 700;
+            color: rgba(70, 70, 110, 1);
+            margin: 10px 0;
+        }
+
+        ul li:nth-child(5) a {
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 700;
+            color: rgba(36, 163, 255, 1);
+        }
+
+        ul li:nth-child(5) a:hover {
+            color: rgba(240, 20, 90, 1);
+        }
+    }
 
 
 
