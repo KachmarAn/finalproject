@@ -131,10 +131,10 @@ input {
   width: 100%;
   padding: 20px;
   box-shadow:
-    20px 10px 12px rgba(202, 202, 219, 1),
+    0px 20px 12px rgba(202, 202, 219, 1),
     /* Первая тень */
-    40px 20px 24px rgba(231, 231, 242, 1);
-  /* Вторая тень */
+    0px 40px 24px rgba(231, 231, 242, 1);
+  // /* Вторая тень */
 }
 
 @media screen and (min-width: 375px) {
