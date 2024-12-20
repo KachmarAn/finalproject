@@ -146,7 +146,7 @@ input {
   }
   .top {
     height: auto;
-    background-color: rgba(0, 0, 0, 0);
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   }
   .logo1 {
     display: none;
@@ -1018,9 +1018,7 @@ content {
 }
 
 content {
-  width: 200px;
-  height: 100px;
-  background-color: #f4f4f4;
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.5);
   /* Вторая тень */
   padding: 20px;
