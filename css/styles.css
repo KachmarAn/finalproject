@@ -120,7 +120,6 @@ input {
   }
   .top {
     height: 45px;
-    background-color: rgba(245, 245, 250, 0.2);
   }
   .pinned {
     display: flex;
@@ -177,6 +176,12 @@ input {
 }
 
 @media screen and (min-width: 375px) {
+  .page .fon {
+    width: 100%;
+    height: 45px;
+    background-color: rgba(245, 245, 250, 0.2);
+    position: absolute;
+  }
   .top {
     display: flex;
     align-items: center;
@@ -399,6 +404,9 @@ input {
     margin: 15px 0;
     width: 335px;
     height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 12px;
     background-color: rgb(245, 245, 250);
   }
@@ -659,6 +667,35 @@ input {
 @media screen and (min-width: 1024px) {
   .mobile {
     display: none;
+  }
+  .fon {
+    display: none;
+  }
+  .menu ul li a {
+    position: relative;
+    /* Для создания подчёркивания с отступом */
+    transition: color 0.3s ease;
+    /* Плавное изменение цвета */
+  }
+  .menu ul li a:hover {
+    color: rgb(240, 20, 90);
+    /* Цвет текста при наведении */
+  }
+  .menu ul li a:hover::after {
+    content: "";
+    /* Добавляем псевдоэлемент для подчёркивания */
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    /* Отступ от текста */
+    width: 100%;
+    /* Длина подчёркивания равна ширине текста */
+    height: 2px;
+    /* Толщина подчёркивания */
+    background-color: rgb(240, 20, 90);
+    /* Цвет подчёркивания */
+    transition: width 0.3s ease;
+    /* Плавное появление */
   }
   .desktop {
     display: flex;
