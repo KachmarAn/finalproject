@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Document</title>
 </head>
@@ -52,7 +55,7 @@
                                     <li><a href="#">
                                             <h4>about us</h4>
                                         </a></li>
-                                    <li><a href="#">
+                                    <li><a href="./pages/services.html">
                                             <h4>services</h4>
                                         </a></li>
                                     <li><a href="#">
@@ -72,7 +75,7 @@
                 <header class="desktop">
                     <div class="contacts">
                         <a class="logo" href="#"> <svg width="130" height="60">
-                                <use href="./sprite.svg#logo"></use>
+                                <use xlink:href="./sprite.svg#logo"></use>
                             </svg>
                         </a>
                     </div>
@@ -88,7 +91,7 @@
                                 <li><a href="tel:0800 211 927"><strong> 0800 211 927</strong></a> </li>
                                 <li><a href="#">
                                         <svg width="24" height="25" fill="white">
-                                            <use href="./sprite.svg#fb"></use>
+                                            <use xlink:href="./sprite.svg#fb"></use>
                                         </svg>
                                     </a>
                                 </li>
@@ -100,7 +103,7 @@
                                     <li><a href="#">
                                             <h4>about us</h4>
                                         </a></li>
-                                    <li><a href="#">
+                                    <li><a href="./pages/services.html">
                                             <h4>services</h4>
                                         </a></li>
                                     <li><a href="#">
@@ -120,12 +123,12 @@
                 <h2>you legal solutions provider</h2>
                 <a class="scroll" href="#section1">
                     <svg fill="none" width="42" height="42">
-                        <use href="./sprite.svg#scroll"></use>
+                        <use xlink:href="./sprite.svg#scroll"></use>
                     </svg>
                 </a>
             </div>
             <div>
-                <div class="exper">
+                <div class="exper" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                     <div class="frame3">
                         <ul>
                             <li><a href="#">
@@ -144,7 +147,7 @@
                         </ul>
                     </div>
                     <span class="line"></span>
-                    <div id="section1" class="turn" >
+                    <div id="section1" class="turn">
                         <h2>We turn the idea of legal services</h2>
                         <p>Consolidating many years of experience and practice, the company's lawyers accompany complex
                             projects
@@ -154,14 +157,14 @@
                     </div>
                 </div>
                 <div class="grid">
-                    <a href="#">SERVICES > </a>
+                    <a href="./pages/services.html">SERVICES > </a>
                     <h1>What can we do better than others?</h1>
                     <div>
                         <div class="icong">
                             <div class="icon">
                                 <img width="64" height="64" src="./svg/Ecommerce.svg" alt="ecommerce">
                                 <!-- <svg width="64" height="64">
-                                    <use href="./sprite.svg#ecommerce"></use>
+                                    <use xlink:href="./sprite.svg#ecommerce"></use>
                                 </svg> -->
                             </div>
                             <h3>IT and e-commerce</h3>
@@ -177,7 +180,7 @@
                             <div class="icon">
                                 <img width="65" height="64" src="./svg/Support.svg" alt="support">
                                 <!-- <svg width="65" height="64">
-                                    <use href="./sprite.svg#support"></use>
+                                    <use xlink:href="./sprite.svg#support"></use>
                                 </svg> -->
                             </div>
                             <h3>Comprehensive daily
@@ -192,7 +195,7 @@
                             <div class="icon">
                                 <img width="65" height="64" src="./svg/Coprorate.svg" alt="corporate">
                                 <!-- <svg width="65" height="64">
-                                    <use href="./sprite.svg#corporate"></use>
+                                    <use xlink:href="./sprite.svg#corporate"></use>
                                 </svg> -->
                             </div>
                             <h3>Structuring corporate relationships</h3>
@@ -205,7 +208,7 @@
                             <div class="icon">
                                 <img width="64" height="64" src="./svg/Trust.svg" alt="trust">
                                 <!-- <svg width="64" height="64">
-                                    <use href="./sprite.svg#trust"></use>
+                                    <use xlink:href="./sprite.svg#trust"></use>
                                 </svg> -->
                             </div>
                             <h3>Building contractual relations</h3>
@@ -221,7 +224,7 @@
                             <div class="icon">
                                 <img width="65" height="64" src="./svg/Protection.svg" alt="Protection">
                                 <!-- <svg width="65" height="64">
-                                    <use href="./sprite.svg#protection"></use>
+                                    <use xlink:href="./sprite.svg#protection"></use>
                                 </svg> -->
                             </div>
                             <h3>Protection of business, intellectual property</h3>
@@ -237,7 +240,7 @@
                             <div class="icon">
                                 <img width="65" height="64" src="./svg/Court.svg" alt="Court">
                                 <!-- <svg width="65" height="64">
-                                    <use href="./sprite.svg#court"></use>
+                                    <use xlink:href="./sprite.svg#court"></use>
                                 </svg> -->
                             </div>
                             <h3>Judicial representation</h3>
@@ -273,7 +276,7 @@
                             <div class="color1">
                                 <img width="217" height="48" src="./img/hillel.png" alt="hillel">
                                 <!-- <svg width="217" height="48">
-                                    <use href="./sprite.svg#hillel"></use>
+                                    <use xlink:href="./sprite.svg#hillel"></use>
                                 </svg> -->
                             </div>
                         </div>
@@ -289,7 +292,7 @@
                             <div class="color3">
                                 <img width="179" height="44" src="./img/tapgerine.png" alt="">
                                 <!-- <svg width="179" height="44">
-                                    <use href="./sprite.svg#tapgerine"></use>
+                                    <use xlink:href="./sprite.svg#tapgerine"></use>
                                 </svg> -->
                             </div>
                         </div>
@@ -297,7 +300,7 @@
                             <div class="color4">
                                 <img width="180" height="42" src="./img/3dlook.png" alt="3dlook">
                                 <!-- <svg width="180" height="42" >
-                                    <use href="./sprite.svg#3dlook"></use>
+                                    <use xlink:href="./sprite.svg#3dlook"></use>
                                 </svg> -->
                             </div>
                         </div>
@@ -305,7 +308,7 @@
                             <div class="color5">
                                 <img width="174" height="44" src="./img/orangear.png" alt="orangear">
                                 <!-- <svg width="174" height="44" >
-                                    <use href="./sprite.svg#orangear"></use>
+                                    <use xlink:href="./sprite.svg#orangear"></use>
                                 </svg> -->
                             </div>
                         </div>
@@ -313,7 +316,7 @@
                             <div class="color6">
                                 <img width="187" height="48" src="./img/adtelligent.png" alt="adtelligent">
                                 <!-- <svg  width="187" height="48">
-                                    <use href="./sprite.svg#adtelligent"></use>
+                                    <use xlink:href="./sprite.svg#adtelligent"></use>
                                 </svg> -->
                             </div>
                         </div>
@@ -321,7 +324,7 @@
                             <div class="color7">
                                 <img width="138" height="61" src="./img/clickky.png" alt="clickky">
                                 <!-- <svg  width="138" height="61" >
-                                    <use href="./sprite.svg#clickky"></use>
+                                    <use xlink:href="./sprite.svg#clickky"></use>
                                 </svg> -->
                             </div>
                         </div>
@@ -329,7 +332,7 @@
                             <div class="color8">
                                 <img width="146" height="76" src="./img/eco-leasing.png" alt="eco-leasing">
                                 <!-- <svg width="146" height="76" >
-                                    <use href="./sprite.svg#eco-leasing"></use>
+                                    <use xlink:href="./sprite.svg#eco-leasing"></use>
                                 </svg> -->
                             </div>
                         </div>
@@ -337,7 +340,7 @@
                             <div class="color9">
                                 <img width="182" height="60" src="./img/ingratek.png" alt="ingratek">
                                 <!-- <svg width="182" height="60">
-                                    <use href="./sprite.svg#ingratek"></use>
+                                    <use xlink:href="./sprite.svg#ingratek"></use>
                                 </svg> -->
                             </div>
                         </div>
@@ -345,7 +348,7 @@
                             <div class="color10">
                                 <img width="181" height="38" src="./img/city-par.png" alt="city-par">
                                 <!-- <svg width="181" height="38" >
-                                    <use href="./sprite.svg#city-par"></use>
+                                    <use xlink:href="./sprite.svg#city-par"></use>
                                 </svg> -->
                             </div>
                         </div>
@@ -353,7 +356,7 @@
                             <div class="color11">
                                 <img width="189" height="46" src="img/artprint.png" alt="artprint">
                                 <!-- <svg width="189" height="46" >
-                                    <use href="./sprite.svg#artprint"></use>
+                                    <use xlink:href="./sprite.svg#artprint"></use>
                                 </svg> -->
                             </div>
                         </div>
@@ -361,7 +364,7 @@
                             <div class="color12">
                                 <img width="152" height="95" src="./img/ultimatecard.png" alt="ultimatecard">
                                 <!-- <svg width="152" height="95" >
-                                    <use href="./sprite.svg#ultimatecard"></use>
+                                    <use xlink:href="./sprite.svg#ultimatecard"></use>
                                 </svg> -->
                             </div>
                         </div>
@@ -416,7 +419,7 @@
                             <li>On map</li>
                             <li>
                                 <svg fill="rgba(36, 163, 255, 1)" width="38" height="38">
-                                    <use href="./sprite.svg#fbfoot"></use>
+                                    <use xlink:href="./sprite.svg#fbfoot"></use>
                                 </svg>
                             </li>
                             <li><a href="tel:0800 211 927"><strong> 0800 211 927</strong></a> </li>
@@ -437,7 +440,7 @@
                             <ul class="contact">
                                 <li>
                                     <svg fill="rgba(36, 163, 255, 1)" width="38" height="38">
-                                        <use href="./sprite.svg#fbfoot"></use>
+                                        <use xlink:href="./sprite.svg#fbfoot"></use>
                                     </svg>
                                 </li>
                                 <li><a href="tel:0800211927"><strong>0800 211 927</strong></a></li>
@@ -459,6 +462,10 @@
 
 
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

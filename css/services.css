@@ -246,7 +246,7 @@ input {
     justify-content: center;
   }
   .grid .icong {
-    min-width: 315px;
+    width: 315px;
     height: auto;
     margin-bottom: 30px;
     margin-top: 0;
@@ -977,14 +977,6 @@ input {
   }
 }
 .splash {
-  background-image: url("../svg/Symbol.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-}
-
-.splash {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -1009,6 +1001,10 @@ input {
 .splash .scroll:hover {
   stroke: red;
   /* Меняем цвет линий на красный */
+}
+
+.grid {
+  margin-top: 60px;
 }
 
 content {
@@ -1239,4 +1235,4 @@ content {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=services.css.map */
