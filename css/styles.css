@@ -19,6 +19,10 @@ html {
   /* Включаем плавную прокрутку */
 }
 
+.page {
+  overflow-x: hidden; /* Отключить горизонтальную прокрутку */
+}
+
 h1,
 h2,
 h3,
@@ -295,7 +299,6 @@ input {
     object-fit: cover;
   }
   .team .part {
-    width: 315px;
     border-radius: 0 0 12px 12px;
   }
   .part2 h1 {
@@ -511,10 +514,6 @@ input {
     display: flex;
     align-items: center;
     margin: 60px 60px 0 60px;
-  }
-  .team .imgt {
-    width: 648px;
-    height: 500px;
   }
   .team img {
     object-fit: cover;
@@ -791,6 +790,12 @@ input {
   .grid div .icong {
     min-width: auto;
   }
+  .slider .team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 60px 35px;
+  }
   .team {
     display: flex;
     flex-direction: row;
@@ -872,6 +877,7 @@ input {
   }
   .team .part {
     height: 344px;
+    width: auto;
   }
   .clients .card .color1,
   .clients .card .color2,
@@ -928,7 +934,6 @@ input {
     height: 298px;
   }
   .team .part {
-    width: 1200px;
     height: 298px;
   }
   .clients {
