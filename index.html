@@ -10,8 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Final projects</title>
@@ -257,18 +258,48 @@
 
         <div class="shadow"></div>
         <div>
-            <div class="team">
-                <div class="imgt">
-                    <img src="./img/Team-1.png" alt="Olaksandrovskyi">
+            <div class="slider">
+                <div class="team">
+                    <div class="imgt">
+                        <img width="500px" height="500px" src="./img/Team-1.png" alt="Olaksandrovskyi">
+                    </div>
+                    <div class="part">
+                        <a href="#">команда ></a>
+                        <h1>Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть
+                            у
+                            ситуаціях, коли більшість безсилі.</h1>
+                        <h4>Олександр Олександровський</h4>
+                        <div>Керуючий партнер</div>
+                    </div>
                 </div>
-                <div class="part">
-                    <a href="#">команда ></a>
-                    <h1>Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у
-                        ситуаціях, коли більшість безсилі.</h1>
-                    <h4>Олександр Олександровський</h4>
-                    <div>Керуючий партнер</div>
+                <div class="team">
+                    <div class="imgt">
+                        <img src="./img/Team-1.png" alt="Olaksandrovskyi">
+                    </div>
+                    <div class="part">
+                        <a href="#">команда ></a>
+                        <h1>Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть
+                            у
+                            ситуаціях, коли більшість безсилі.</h1>
+                        <h4>Олександр Олександровський</h4>
+                        <div>Керуючий партнер</div>
+                    </div>
+                </div>
+                <div class="team">
+                    <div class="imgt">
+                        <img src="./img/Team-1.png" alt="Olaksandrovskyi">
+                    </div>
+                    <div class="part">
+                        <a href="#">команда ></a>
+                        <h1>Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть
+                            у
+                            ситуаціях, коли більшість безсилі.</h1>
+                        <h4>Олександр Олександровський</h4>
+                        <div>Керуючий партнер</div>
+                    </div>
                 </div>
             </div>
+
             <div>
                 <div class="clients">
                     <h3> THEY ALREADY TRUST US</h3>
@@ -463,22 +494,29 @@
 
 
     </section>
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-  ></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <!-- <script type="text/javascript">
-        $(document).ready(function(){
-          AOS.init();
-          $('.team').slick();
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                dots: true,         // Точки навигации
+                infinite: true,     // Бесконечный цикл
+                speed: 500,         // Скорость переключения
+                slidesToShow: 1,    // Количество слайдов на экране
+                slidesToScroll: 1,  // Количество слайдов при скролле
+                // arrows: true,       // Кнопки "вперед" и "назад"
+                // autoplay: true,     // Автопрокрутка
+                // autoplaySpeed: 3000 // Интервал автопрокрутки (в миллисекундах)
+            });
         });
-      </script> -->
+    </script>
+
 </body>
 
 </html>

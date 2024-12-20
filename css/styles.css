@@ -166,6 +166,11 @@ input {
     padding: 0 160px;
   }
 }
+.slider {
+  width: 95%;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 375px) {
   .page .fon {
     width: 100%;
@@ -512,7 +517,6 @@ input {
     height: 500px;
   }
   .team img {
-    height: auto;
     object-fit: cover;
   }
   .team .part {
@@ -790,8 +794,8 @@ input {
   .team {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 904px;
-    height: 528px;
     align-items: flex-start;
   }
   .team h1 {
@@ -805,6 +809,7 @@ input {
     border-radius: 12px 0 0 12px;
   }
   .team .part {
+    width: 504px;
     height: 528px;
     border-radius: 0 12px 12px 0;
   }

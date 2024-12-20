@@ -155,11 +155,23 @@
         }
     }
 
+    // .page .slider .team {
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-between;
+    //     .imgt {
+    //         width: 400px;
+    //         height: 528px;
+    //         object-fit: cover;
+    //         border-radius: 12px 0 0 12px;
+    //     }
+    // }
     .team {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         width: 904px;
-        height: 528px;
+        // height: 528px;
         align-items: flex-start;
 
         h1 {
@@ -175,6 +187,7 @@
         }
 
         .part {
+            width: 504px;
             height: 528px;
             border-radius: 0 12px 12px 0;
         }
