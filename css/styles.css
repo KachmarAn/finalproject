@@ -246,7 +246,7 @@ input {
     justify-content: center;
   }
   .grid .icong {
-    min-width: 315px;
+    width: 315px;
     height: auto;
     margin-bottom: 30px;
     margin-top: 0;
@@ -522,6 +522,7 @@ input {
   .clients div {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .clients div .color1,
   .clients div .color2,
@@ -1007,7 +1008,7 @@ input {
   cursor: pointer;
 }
 .splash .scroll:hover {
-  stroke: red;
+  stroke: rgb(240, 20, 90);
   /* Меняем цвет линий на красный */
 }
 

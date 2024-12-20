@@ -522,6 +522,7 @@ input {
   .clients div {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .clients div .color1,
   .clients div .color2,
@@ -1233,6 +1234,18 @@ content {
   content {
     margin: 0 15px;
   }
+}
+.menu ul li:nth-child(2) a h4 {
+  color: rgb(240, 20, 90);
+  /* Цвет текста */
+  text-decoration: underline;
+  /* Подчеркивание */
+  text-underline-offset: 3px;
+}
+
+.menu-list ul li:nth-child(2) a h4 {
+  color: rgb(240, 20, 90);
+  /* Цвет текста */
 }
 
 /*# sourceMappingURL=services.css.map */
