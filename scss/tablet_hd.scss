@@ -46,7 +46,7 @@
 
 
         .top {
-            width: 478px;
+            width: 510px;
             align-items: center;
         }
 
@@ -59,12 +59,31 @@
             align-items: end;
         }
 
+
+        .top>ul>li::before {
+            content: "•";
+            color: white;
+            /* Белый цвет точки */
+            font-size: 16px;
+            /* Размер точки */
+            position: relative;
+            // left: 0;
+            // /* Размещает точку перед элементом */
+            // top: 50%;
+            // transform: translateY(-50%);
+            /* Центрирует точку по вертикали */
+            margin-right: 6px;
+            /* Расстояние между точкой и текстом */
+        }
+
         .top {
             display: flex;
             justify-content: space-between;
             /* Выравниваем элементы по ширине */
             align-items: center;
+
             /* Выравниваем элементы по вертикали */
+
         }
 
         .top ul {
@@ -75,6 +94,7 @@
             padding: 0;
 
         }
+
 
         .top li {
             margin-left: 10px;

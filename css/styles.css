@@ -728,7 +728,7 @@ input {
     margin-bottom: 5px;
   }
   .desktop .top {
-    width: 478px;
+    width: 510px;
     align-items: center;
   }
   .desktop .pinned {
@@ -738,6 +738,17 @@ input {
     flex-direction: column;
     justify-content: space-between;
     align-items: end;
+  }
+  .desktop .top > ul > li::before {
+    content: "•";
+    color: white;
+    /* Белый цвет точки */
+    font-size: 16px;
+    /* Размер точки */
+    position: relative;
+    /* Центрирует точку по вертикали */
+    margin-right: 6px;
+    /* Расстояние между точкой и текстом */
   }
   .desktop .top {
     display: flex;
