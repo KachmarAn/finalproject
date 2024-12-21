@@ -7,7 +7,6 @@
             background-color: rgba(245, 245, 250, 0.2);
             position: absolute;
         }
-
     }
 
     .top {
@@ -39,12 +38,9 @@
 
     .frame3 {
         width: 100%;
-        /* Ширина контейнера равна ширине экрана */
         overflow-x: auto;
-        /* Включает горизонтальную прокрутку */
         white-space: nowrap;
 
-        /* Запрещает перенос строк внутри контейнера */
         h1 {
             font-size: 30px;
         }
@@ -52,7 +48,6 @@
 
     .frame3 ul {
         display: inline-flex;
-        /* Включает горизонтальное выравнивание элементов списка */
         padding: 0;
         margin: 0;
         list-style: none;
@@ -60,27 +55,19 @@
 
     .frame3 li {
         display: inline-block;
-        /* Располагает элементы списка в одну линию */
         margin-right: 30px;
-        /* Отступ между элементами списка */
     }
 
     .line {
         display: block;
-        /* Делает <span> блочным элементом */
         width: auto;
-        /* Ширина линии */
         height: 4px;
-        /* Толщина линии */
         background-color: rgba(255, 255, 255, 0.3);
-        /* Цвет линии */
         margin: 30px 30px;
-        /* Отступы сверху и снизу */
     }
 
     .turn {
         min-width: 315px;
-        // min-height: 318px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -107,7 +94,6 @@
         flex-direction: column;
 
         h1 {
-
             background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
             -webkit-background-clip: text;
             /* Используем фон только для текста */
@@ -233,11 +219,8 @@
         display: none;
     }
 
-
-    /* Общий стиль для контейнера */
     .burger-menu {
         position: fixed;
-        // top: 20px; /* Бургер-кнопка в верхней части экрана */
         right: 16px;
         z-index: 1000;
 
@@ -280,17 +263,13 @@
         position: fixed;
         bottom: -100%;
         border-radius: 12px 12px 0 0;
-        /* Скрываем меню ниже экрана */
         left: 2.5%;
         width: 95%;
         height: auto;
-        /* Меню занимает всю высоту экрана */
         background: rgba(255, 255, 255, 1);
-        /* Фон меню */
         color: rgba(36, 163, 255, 1);
         z-index: 999;
         transition: bottom 0.4s ease;
-        /* Анимация появления */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -326,13 +305,11 @@
 
     .menu-list ul li a:hover {
         color: rgba(240, 20, 90, 1);
-        /* Цвет текста при наведении */
     }
 
     /* Раскрытие меню при активации чекбокса */
     #menu-toggle:checked~.menu-list {
         bottom: 0;
-        /* Меню поднимается на весь экран */
     }
 
     .mobile-foot {
@@ -397,12 +374,4 @@
             color: rgba(240, 20, 90, 1);
         }
     }
-
-
-
-
-
-
-
-
 }

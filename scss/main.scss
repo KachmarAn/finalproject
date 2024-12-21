@@ -6,14 +6,13 @@
 @use 'tablet_hd';
 @use 'desktop';
 
-
 .splash {
     background-image: url('../svg/Symbol.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-  }
+}
 
 .splash {
     display: flex;
@@ -31,7 +30,6 @@
 
     .scroll {
         text-align: center;
-        // color: rgba(255, 255, 255, 1);
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -39,17 +37,10 @@
         cursor: pointer;
     }
 
-
-    /* Цвет линий при наведении */
     .scroll:hover {
         stroke: vars.$accent;
-        /* Меняем цвет линий на красный */
     }
-
 }
-
-
-
 
 content {
     display: flex;
@@ -76,7 +67,7 @@ content {
 
 .team {
 
-      a {
+    a {
         font-size: 14px;
         color: rgba(36, 163, 255, 1);
         font-weight: 700;
@@ -145,13 +136,9 @@ content {
     }
 
     img {
-        // height: 100%;
-        /* По умолчанию изображение занимает всю ширину контейнера */
         max-height: 200px;
-        /* Ограничиваем максимальную ширину */
         width: 100%;
         object-fit: cover;
-        /* Сохраняем пропорции */
         border-radius: 8px 8px 0 0;
     }
 
@@ -160,15 +147,10 @@ content {
 
         .line1 {
             display: block;
-            /* Делает <span> блочным элементом */
             width: auto;
-            /* Ширина линии */
             height: 4px;
-            /* Толщина линии */
             background-color: rgba(230, 230, 240, 1);
-            /* Цвет линии */
             margin: 15px 0px;
-            /* Отступы сверху и снизу */
         }
 
         div {
@@ -203,15 +185,10 @@ content {
 
     .line2 {
         display: block;
-        /* Делает <span> блочным элементом */
         width: auto;
-        /* Ширина линии */
         height: 2px;
-        /* Толщина линии */
         background-color: rgba(230, 230, 240, 1);
-        /* Цвет линии */
         margin: 15px 0 30px;
-        /* Отступы сверху и снизу */
     }
 }
 

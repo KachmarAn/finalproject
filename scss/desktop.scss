@@ -10,7 +10,6 @@
             width: 375px;
             height: 274px;
 
-            // margin-right: 0;
             h1 {
                 font-size: 38px;
             }
@@ -136,7 +135,6 @@
         }
 
         .part {
-            // width: 1200px;
             height: 298px;
         }
     }
@@ -185,10 +183,10 @@
         }
     }
 
-    div > .part2 {
+    div>.part2 {
         padding-left: 180px;
         padding-right: 180px;
-        
+
         >div {
             width: 1600px;
             height: 430px;
@@ -198,15 +196,8 @@
 
                 .asociat {
                     height: 430px;
-
-                    // h4,
-                    // span {
-                    //     margin: 0;
-                    // }
                 }
             }
         }
     }
-
-
 }

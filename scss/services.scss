@@ -6,9 +6,6 @@
 @use 'tablet_hd';
 @use 'desktop';
 
-
-
-
 .splash {
     display: flex;
     flex-direction: column;
@@ -25,7 +22,6 @@
 
     .scroll {
         text-align: center;
-        // color: rgba(255, 255, 255, 1);
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -33,19 +29,15 @@
         cursor: pointer;
     }
 
-
     /* Цвет линий при наведении */
     .scroll:hover {
         stroke: red;
-        /* Меняем цвет линий на красный */
     }
-
 }
 
 .grid {
     margin-top: 60px;
 }
-
 
 content {
     display: flex;
@@ -128,12 +120,9 @@ content {
 
     img {
         height: 100%;
-        /* По умолчанию изображение занимает всю ширину контейнера */
         max-height: 200px;
-        /* Ограничиваем максимальную ширину */
         width: 100%;
         object-fit: cover;
-        /* Сохраняем пропорции */
         border-radius: 8px 8px 0 0;
     }
 
@@ -142,15 +131,10 @@ content {
 
         .line1 {
             display: block;
-            /* Делает <span> блочным элементом */
             width: auto;
-            /* Ширина линии */
             height: 4px;
-            /* Толщина линии */
             background-color: rgba(230, 230, 240, 1);
-            /* Цвет линии */
             margin: 15px 0px;
-            /* Отступы сверху и снизу */
         }
 
         div {
@@ -185,15 +169,10 @@ content {
 
     .line2 {
         display: block;
-        /* Делает <span> блочным элементом */
         width: auto;
-        /* Ширина линии */
         height: 2px;
-        /* Толщина линии */
         background-color: rgba(230, 230, 240, 1);
-        /* Цвет линии */
         margin: 15px 0 30px;
-        /* Отступы сверху и снизу */
     }
 }
 
@@ -206,7 +185,6 @@ content {
         margin-top: 60px;
         margin-bottom: 30px;
     }
-
 }
 
 .card {
@@ -305,10 +283,10 @@ content {
     /* Цвет текста */
     text-decoration: underline;
     /* Подчеркивание */
-    text-underline-offset: 3px; 
+    text-underline-offset: 3px;
 }
 
 .menu-list ul li:nth-child(2) a h4 {
     color: vars.$accent;
     /* Цвет текста */
-    }
+}

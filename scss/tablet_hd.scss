@@ -25,17 +25,11 @@
         position: absolute;
         left: 0;
         bottom: -3px;
-        /* Отступ от текста */
         width: 100%;
-        /* Длина подчёркивания равна ширине текста */
         height: 2px;
-        /* Толщина подчёркивания */
         background-color: rgba(240, 20, 90, 1);
-        /* Цвет подчёркивания */
         transition: width 0.3s ease;
-        /* Плавное появление */
     }
-
 
     .desktop {
         display: flex;
@@ -43,7 +37,6 @@
         justify-content: space-between;
         margin-top: 50px;
         margin-bottom: 5px;
-
 
         .top {
             width: 510px;
@@ -59,31 +52,18 @@
             align-items: end;
         }
 
-
         .top>ul>li::before {
             content: "•";
             color: white;
-            /* Белый цвет точки */
             font-size: 16px;
-            /* Размер точки */
             position: relative;
-            // left: 0;
-            // /* Размещает точку перед элементом */
-            // top: 50%;
-            // transform: translateY(-50%);
-            /* Центрирует точку по вертикали */
             margin-right: 6px;
-            /* Расстояние между точкой и текстом */
         }
 
         .top {
             display: flex;
             justify-content: space-between;
-            /* Выравниваем элементы по ширине */
             align-items: center;
-
-            /* Выравниваем элементы по вертикали */
-
         }
 
         .top ul {
@@ -92,13 +72,10 @@
             align-items: center;
             margin: 0;
             padding: 0;
-
         }
-
 
         .top li {
             margin-left: 10px;
-            /* Отступ между элементами списка */
         }
 
         .menu ul {
@@ -106,7 +83,6 @@
             list-style: none;
             justify-content: space-around;
 
-            /* Распределяем элементы меню по ширине */
             li {
                 margin-left: 15px;
                 color: rgba(255, 255, 255, 1);
@@ -139,12 +115,10 @@
                 align-items: center;
                 justify-items: end;
                 border: none;
-                /* Убираем границы в вертикальном режиме */
             }
         }
 
         span {
-            // transform: rotate(90deg);
             width: 4px;
             height: 303px;
             margin: 0;
@@ -167,33 +141,18 @@
     .grid div {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        /* Разбиваем на 3 равные колонки */
         grid-gap: 20px;
 
-        /* Отступы между элементами */
         .icong {
             width: auto;
         }
     }
 
-    // .page .slider .team {
-    //     display: flex;
-    //     flex-direction: row;
-    //     justify-content: space-between;
-    //     .imgt {
-    //         width: 400px;
-    //         height: 528px;
-    //         object-fit: cover;
-    //         border-radius: 12px 0 0 12px;
-    //     }
-    // }
     .slider .team {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin: 60px 35px;
-
-
     }
 
     .team {
@@ -201,7 +160,6 @@
         flex-direction: row;
         justify-content: space-between;
         width: 904px;
-        // height: 528px;
         align-items: flex-start;
 
         h1 {
@@ -236,14 +194,5 @@
                 line-height: 46px;
             }
         }
-
-
     }
-
-
-
-
-
-
-
 }

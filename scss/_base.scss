@@ -22,7 +22,7 @@ $gradient: linear-gradient(128.63deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
 $gradient-soft: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
 $gradient-red: linear-gradient(323.35deg, #F0145A 6.7%, #693264 70.36%);
 $gradient-supersoft: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-$gradient-red-text: linear-gradient(rgba(240, 20, 90, 1) rgba(239, 128, 128, 1)) ;
+$gradient-red-text: linear-gradient(rgba(240, 20, 90, 1) rgba(239, 128, 128, 1));
 
 
 
@@ -39,12 +39,12 @@ $gradient-red-text: linear-gradient(rgba(240, 20, 90, 1) rgba(239, 128, 128, 1))
 
 html {
   scroll-behavior: smooth;
-  /* Включаем плавную прокрутку */
 }
+
 .page {
- 
-  overflow-x: hidden; /* Отключить горизонтальную прокрутку */
+  overflow-x: hidden;
 }
+
 h1,
 h2,
 h3,
@@ -151,14 +151,9 @@ input {
     display: none;
   }
 
-  // .logo {
-  //   display: none;
-  // }
-
-
   .top {
     height: 45px;
-    }
+  }
 
   .pinned {
     display: flex;
@@ -193,7 +188,7 @@ input {
 
   .top {
     height: auto;
-     }
+  }
 
   .logo1 {
     display: none;
@@ -216,7 +211,6 @@ input {
     max-width: calc (1600px + 160px + 160px);
     padding: 0 160px;
   }
-
 }
 
 .slider {
