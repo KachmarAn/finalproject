@@ -16,11 +16,10 @@ body {
 
 html {
   scroll-behavior: smooth;
-  /* Включаем плавную прокрутку */
 }
 
 .page {
-  overflow-x: hidden; /* Отключить горизонтальную прокрутку */
+  overflow-x: hidden;
 }
 
 h1,
@@ -187,9 +186,13 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
   }
   .top ul {
     color: #fff;
+  }
+  .splash .scroll:hover {
+    fill: rgb(240, 20, 90);
   }
   .frame3 li {
     display: inline-block;
@@ -201,36 +204,28 @@ input {
   }
   .frame3 {
     width: 100%;
-    /* Ширина контейнера равна ширине экрана */
     overflow-x: auto;
-    /* Включает горизонтальную прокрутку */
     white-space: nowrap;
-    /* Запрещает перенос строк внутри контейнера */
+  }
+  .frame3 h1 {
+    font-size: 30px;
   }
   .frame3 ul {
     display: inline-flex;
-    /* Включает горизонтальное выравнивание элементов списка */
     padding: 0;
     margin: 0;
     list-style: none;
   }
   .frame3 li {
     display: inline-block;
-    /* Располагает элементы списка в одну линию */
     margin-right: 30px;
-    /* Отступ между элементами списка */
   }
   .line {
     display: block;
-    /* Делает <span> блочным элементом */
     width: auto;
-    /* Ширина линии */
     height: 4px;
-    /* Толщина линии */
     background-color: rgba(255, 255, 255, 0.3);
-    /* Цвет линии */
     margin: 30px 30px;
-    /* Отступы сверху и снизу */
   }
   .turn {
     min-width: 315px;
@@ -359,7 +354,6 @@ input {
   div .card .color7 {
     display: none;
   }
-  /* Общий стиль для контейнера */
   .burger-menu {
     position: fixed;
     right: 16px;
@@ -399,17 +393,13 @@ input {
     position: fixed;
     bottom: -100%;
     border-radius: 12px 12px 0 0;
-    /* Скрываем меню ниже экрана */
     left: 2.5%;
     width: 95%;
     height: auto;
-    /* Меню занимает всю высоту экрана */
     background: rgb(255, 255, 255);
-    /* Фон меню */
     color: rgb(36, 163, 255);
     z-index: 999;
     transition: bottom 0.4s ease;
-    /* Анимация появления */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -441,12 +431,10 @@ input {
   }
   .menu-list ul li a:hover {
     color: rgb(240, 20, 90);
-    /* Цвет текста при наведении */
   }
   /* Раскрытие меню при активации чекбокса */
   #menu-toggle:checked ~ .menu-list {
     bottom: 0;
-    /* Меню поднимается на весь экран */
   }
   .mobile-foot {
     display: flex;
@@ -567,8 +555,6 @@ input {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    /* Создаем 2 колонки равной ширины */
-    /* Отступы между элементами */
   }
   .part2 div .item {
     display: flex;
@@ -581,7 +567,6 @@ input {
   }
   .part2 div .item:nth-child(3) {
     grid-column: 1/span 2;
-    /* Занимаем две колонки */
   }
   .part2 div .asociat {
     display: flex;
@@ -622,17 +607,13 @@ input {
   }
   .part2 .info-container .address li::after {
     content: "•";
-    /* Добавляем разделитель */
     color: rgb(179, 179, 186);
-    /* Цвет точки */
     margin-left: 7px;
-    /* Отступ между текстом и точкой */
     margin-right: 7px;
     font-size: 2rem;
   }
   .part2 .info-container .address li:last-child::after {
     content: "";
-    /* Убираем точку у последнего элемента */
   }
   .part2 .info-container .contact li:nth-child(1) svg:hover {
     fill: rgb(240, 20, 90);
@@ -656,17 +637,13 @@ input {
   }
   .part2 .info-container .contact li::after {
     content: "•";
-    /* Добавляем разделитель */
     color: rgb(179, 179, 186);
-    /* Цвет точки */
     margin-left: 7px;
-    /* Отступ между текстом и точкой */
     margin-right: 7px;
     font-size: 2rem;
   }
   .part2 .info-container .contact li:last-child::after {
     content: "";
-    /* Убираем точку у последнего элемента */
   }
   .part2 .row {
     width: auto;
@@ -690,33 +667,23 @@ input {
   }
   .frame3 ul {
     display: block;
-    /* Меняем на вертикальное расположение */
   }
   .frame3 li {
     display: block;
-    /* Элементы списка располагаются вертикально */
     margin-right: 0;
-    /* Убираем правый отступ */
   }
   .menu ul li a:hover {
     color: rgb(240, 20, 90);
-    /* Цвет текста при наведении */
   }
   .menu ul li a:hover::after {
     content: "";
-    /* Добавляем псевдоэлемент для подчёркивания */
     position: absolute;
     left: 0;
     bottom: -3px;
-    /* Отступ от текста */
     width: 100%;
-    /* Длина подчёркивания равна ширине текста */
     height: 2px;
-    /* Толщина подчёркивания */
     background-color: rgb(240, 20, 90);
-    /* Цвет подчёркивания */
     transition: width 0.3s ease;
-    /* Плавное появление */
   }
   .desktop {
     display: flex;
@@ -726,7 +693,7 @@ input {
     margin-bottom: 5px;
   }
   .desktop .top {
-    width: 478px;
+    width: 510px;
     align-items: center;
   }
   .desktop .pinned {
@@ -736,14 +703,18 @@ input {
     flex-direction: column;
     justify-content: space-between;
     align-items: end;
-    /* Основное направление - столбцы */
+  }
+  .desktop .top > ul > li::before {
+    content: "•";
+    color: white;
+    font-size: 16px;
+    position: relative;
+    margin-right: 6px;
   }
   .desktop .top {
     display: flex;
     justify-content: space-between;
-    /* Выравниваем элементы по ширине */
     align-items: center;
-    /* Выравниваем элементы по вертикали */
   }
   .desktop .top ul {
     display: flex;
@@ -754,13 +725,11 @@ input {
   }
   .desktop .top li {
     margin-left: 10px;
-    /* Отступ между элементами списка */
   }
   .desktop .menu ul {
     display: flex;
     list-style: none;
     justify-content: space-around;
-    /* Распределяем элементы меню по ширине */
   }
   .desktop .menu ul li {
     margin-left: 15px;
@@ -790,7 +759,6 @@ input {
     align-items: center;
     justify-items: end;
     border: none;
-    /* Убираем границы в вертикальном режиме */
   }
   .exper span {
     width: 4px;
@@ -811,9 +779,7 @@ input {
   .grid div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* Разбиваем на 3 равные колонки */
     grid-gap: 20px;
-    /* Отступы между элементами */
   }
   .grid div .icong {
     width: auto;
@@ -842,7 +808,7 @@ input {
     border-radius: 12px 0 0 12px;
   }
   .team .part {
-    width: 504px;
+    width: auto;
     height: 528px;
     border-radius: 0 12px 12px 0;
   }
@@ -1038,7 +1004,6 @@ input {
 }
 .splash .scroll:hover {
   stroke: red;
-  /* Меняем цвет линий на красный */
 }
 
 .grid {
@@ -1115,12 +1080,9 @@ content {
 }
 .part2 img {
   height: 100%;
-  /* По умолчанию изображение занимает всю ширину контейнера */
   max-height: 200px;
-  /* Ограничиваем максимальную ширину */
   width: 100%;
   object-fit: cover;
-  /* Сохраняем пропорции */
   border-radius: 8px 8px 0 0;
 }
 .part2 .item {
@@ -1128,15 +1090,10 @@ content {
 }
 .part2 .item .line1 {
   display: block;
-  /* Делает <span> блочным элементом */
   width: auto;
-  /* Ширина линии */
   height: 4px;
-  /* Толщина линии */
   background-color: rgb(230, 230, 240);
-  /* Цвет линии */
   margin: 15px 0px;
-  /* Отступы сверху и снизу */
 }
 .part2 .item div {
   padding: 15px 30px;
@@ -1164,15 +1121,10 @@ content {
 }
 .part2 .line2 {
   display: block;
-  /* Делает <span> блочным элементом */
   width: auto;
-  /* Ширина линии */
   height: 2px;
-  /* Толщина линии */
   background-color: rgb(230, 230, 240);
-  /* Цвет линии */
   margin: 15px 0 30px;
-  /* Отступы сверху и снизу */
 }
 
 .clients h3 {
