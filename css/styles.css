@@ -843,7 +843,7 @@ input {
     border-radius: 12px 0 0 12px;
   }
   .team .part {
-    width: 504px;
+    width: auto;
     height: 528px;
     border-radius: 0 12px 12px 0;
   }
