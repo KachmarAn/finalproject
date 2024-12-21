@@ -137,6 +137,8 @@ input {
   .content {
     max-width: calc 708px;
     padding: 0 60px;
+    display: flex;
+    flex-direction: column;
   }
   .mobile-foot {
     display: none;
@@ -149,7 +151,6 @@ input {
   }
   .top {
     height: auto;
-    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   }
   .logo1 {
     display: none;
@@ -186,9 +187,13 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
   }
   .top ul {
     color: #fff;
+  }
+  .splash .scroll:hover {
+    fill: rgb(240, 20, 90);
   }
   .frame3 li {
     display: inline-block;
@@ -197,6 +202,30 @@ input {
   }
   .frame3 li:hover {
     color: rgb(240, 20, 90);
+  }
+  .frame3 {
+    width: 100%;
+    /* Ширина контейнера равна ширине экрана */
+    overflow-x: auto;
+    /* Включает горизонтальную прокрутку */
+    white-space: nowrap;
+    /* Запрещает перенос строк внутри контейнера */
+  }
+  .frame3 h1 {
+    font-size: 30px;
+  }
+  .frame3 ul {
+    display: inline-flex;
+    /* Включает горизонтальное выравнивание элементов списка */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .frame3 li {
+    display: inline-block;
+    /* Располагает элементы списка в одну линию */
+    margin-right: 30px;
+    /* Отступ между элементами списка */
   }
   .line {
     display: block;
@@ -666,19 +695,18 @@ input {
   .fon {
     display: none;
   }
-  .menu ul li a {
-    position: relative;
-    /* Для создания подчёркивания с отступом */
-    transition: color 0.3s ease;
-    /* Плавное изменение цвета */
+  .frame3 ul {
+    display: block;
+  }
+  .frame3 li {
+    display: block;
+    margin-right: 0;
   }
   .menu ul li a:hover {
     color: rgb(240, 20, 90);
-    /* Цвет текста при наведении */
   }
   .menu ul li a:hover::after {
     content: "";
-    /* Добавляем псевдоэлемент для подчёркивания */
     position: absolute;
     left: 0;
     bottom: -3px;
@@ -710,7 +738,6 @@ input {
     flex-direction: column;
     justify-content: space-between;
     align-items: end;
-    /* Основное направление - столбцы */
   }
   .desktop .top {
     display: flex;
@@ -743,14 +770,14 @@ input {
   .exper {
     display: flex;
     margin: 60px 0;
-    justify-content: space-between;
+    justify-content: center;
   }
   .exper .frame3 {
     display: flex;
-    max-width: 375px;
+    width: auto;
     height: 285px;
     margin: 10px 0;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-right: 60px;
   }
@@ -763,6 +790,8 @@ input {
     gap: 20px;
     align-items: center;
     justify-items: end;
+    border: none;
+    /* Убираем границы в вертикальном режиме */
   }
   .exper span {
     width: 4px;
@@ -788,7 +817,7 @@ input {
     /* Отступы между элементами */
   }
   .grid div .icong {
-    min-width: auto;
+    width: auto;
   }
   .slider .team {
     display: flex;
@@ -1101,7 +1130,6 @@ content {
   line-height: 22px;
 }
 .part2 img {
-  height: 100%;
   /* По умолчанию изображение занимает всю ширину контейнера */
   max-height: 200px;
   /* Ограничиваем максимальную ширину */

@@ -19,6 +19,10 @@ html {
   /* Включаем плавную прокрутку */
 }
 
+.page {
+  overflow-x: hidden; /* Отключить горизонтальную прокрутку */
+}
+
 h1,
 h2,
 h3,
@@ -106,8 +110,7 @@ input {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   width: 100%;
   padding: 20px;
-  box-shadow: 20px 10px 12px rgb(202, 202, 219), 40px 20px 24px rgb(231, 231, 242);
-  /* Вторая тень */
+  box-shadow: 0px 20px 12px rgb(202, 202, 219), 0px 40px 24px rgb(231, 231, 242);
 }
 
 @media screen and (min-width: 375px) {
@@ -134,6 +137,8 @@ input {
   .content {
     max-width: calc 708px;
     padding: 0 60px;
+    display: flex;
+    flex-direction: column;
   }
   .mobile-foot {
     display: none;
@@ -146,7 +151,6 @@ input {
   }
   .top {
     height: auto;
-    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   }
   .logo1 {
     display: none;
@@ -167,6 +171,11 @@ input {
     padding: 0 160px;
   }
 }
+.slider {
+  width: 95%;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 375px) {
   .page .fon {
     width: 100%;
@@ -189,6 +198,27 @@ input {
   }
   .frame3 li:hover {
     color: rgb(240, 20, 90);
+  }
+  .frame3 {
+    width: 100%;
+    /* Ширина контейнера равна ширине экрана */
+    overflow-x: auto;
+    /* Включает горизонтальную прокрутку */
+    white-space: nowrap;
+    /* Запрещает перенос строк внутри контейнера */
+  }
+  .frame3 ul {
+    display: inline-flex;
+    /* Включает горизонтальное выравнивание элементов списка */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .frame3 li {
+    display: inline-block;
+    /* Располагает элементы списка в одну линию */
+    margin-right: 30px;
+    /* Отступ между элементами списка */
   }
   .line {
     display: block;
@@ -291,7 +321,6 @@ input {
     object-fit: cover;
   }
   .team .part {
-    width: 315px;
     border-radius: 0 0 12px 12px;
   }
   .part2 h1 {
@@ -508,12 +537,7 @@ input {
     align-items: center;
     margin: 60px 60px 0 60px;
   }
-  .team .imgt {
-    width: 648px;
-    height: 500px;
-  }
   .team img {
-    height: auto;
     object-fit: cover;
   }
   .team .part {
@@ -664,11 +688,15 @@ input {
   .fon {
     display: none;
   }
-  .menu ul li a {
-    position: relative;
-    /* Для создания подчёркивания с отступом */
-    transition: color 0.3s ease;
-    /* Плавное изменение цвета */
+  .frame3 ul {
+    display: block;
+    /* Меняем на вертикальное расположение */
+  }
+  .frame3 li {
+    display: block;
+    /* Элементы списка располагаются вертикально */
+    margin-right: 0;
+    /* Убираем правый отступ */
   }
   .menu ul li a:hover {
     color: rgb(240, 20, 90);
@@ -741,14 +769,14 @@ input {
   .exper {
     display: flex;
     margin: 60px 0;
-    justify-content: space-between;
+    justify-content: center;
   }
   .exper .frame3 {
     display: flex;
-    max-width: 375px;
+    width: auto;
     height: 285px;
     margin: 10px 0;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-right: 60px;
   }
@@ -761,6 +789,8 @@ input {
     gap: 20px;
     align-items: center;
     justify-items: end;
+    border: none;
+    /* Убираем границы в вертикальном режиме */
   }
   .exper span {
     width: 4px;
@@ -786,13 +816,19 @@ input {
     /* Отступы между элементами */
   }
   .grid div .icong {
-    min-width: auto;
+    width: auto;
+  }
+  .slider .team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 60px 35px;
   }
   .team {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 904px;
-    height: 528px;
     align-items: flex-start;
   }
   .team h1 {
@@ -806,6 +842,7 @@ input {
     border-radius: 12px 0 0 12px;
   }
   .team .part {
+    width: 504px;
     height: 528px;
     border-radius: 0 12px 12px 0;
   }
@@ -868,6 +905,7 @@ input {
   }
   .team .part {
     height: 344px;
+    width: auto;
   }
   .clients .card .color1,
   .clients .card .color2,
@@ -924,7 +962,6 @@ input {
     height: 298px;
   }
   .team .part {
-    width: 1200px;
     height: 298px;
   }
   .clients {
@@ -1015,15 +1052,6 @@ content {
 
 .frame3 {
   display: flex;
-}
-
-content {
-  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.5);
-  /* Вторая тень */
-  padding: 20px;
-  text-align: center;
-  line-height: 100px;
 }
 
 .team a {
